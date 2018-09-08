@@ -14,6 +14,13 @@
 		B337C92E2143BCFC00E854F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B337C92D2143BCFC00E854F3 /* Assets.xcassets */; };
 		B337C9312143BCFC00E854F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B337C92F2143BCFC00E854F3 /* LaunchScreen.storyboard */; };
 		B337C9342143BCFC00E854F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9332143BCFC00E854F3 /* main.m */; };
+		B337C93F2143C11F00E854F3 /* AppDelegate+RouterSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C93E2143C11F00E854F3 /* AppDelegate+RouterSupport.m */; };
+		B337C9442143C1D800E854F3 /* BMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9432143C1D800E854F3 /* BMTabbarController.m */; };
+		B337C95A2143CC5800E854F3 /* BMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9582143CC5800E854F3 /* BMLoginViewController.m */; };
+		B337C95B2143CC5800E854F3 /* BMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B337C9592143CC5800E854F3 /* BMLoginViewController.xib */; };
+		B337C95E2143CC8A00E854F3 /* BMLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C95D2143CC8A00E854F3 /* BMLoginViewModel.m */; };
+		B337C9612143CDC600E854F3 /* AppDelegate+AppUrlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9602143CDC600E854F3 /* AppDelegate+AppUrlConfig.m */; };
+		B337C9642143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9632143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,20 @@
 		B337C9302143BCFC00E854F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B337C9322143BCFC00E854F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B337C9332143BCFC00E854F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B337C93D2143C11F00E854F3 /* AppDelegate+RouterSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+RouterSupport.h"; sourceTree = "<group>"; };
+		B337C93E2143C11F00E854F3 /* AppDelegate+RouterSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+RouterSupport.m"; sourceTree = "<group>"; };
+		B337C9422143C1D800E854F3 /* BMTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMTabbarController.h; sourceTree = "<group>"; };
+		B337C9432143C1D800E854F3 /* BMTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMTabbarController.m; sourceTree = "<group>"; };
+		B337C9572143CC5800E854F3 /* BMLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMLoginViewController.h; sourceTree = "<group>"; };
+		B337C9582143CC5800E854F3 /* BMLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMLoginViewController.m; sourceTree = "<group>"; };
+		B337C9592143CC5800E854F3 /* BMLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMLoginViewController.xib; sourceTree = "<group>"; };
+		B337C95C2143CC8A00E854F3 /* BMLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMLoginViewModel.h; sourceTree = "<group>"; };
+		B337C95D2143CC8A00E854F3 /* BMLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMLoginViewModel.m; sourceTree = "<group>"; };
+		B337C95F2143CDC600E854F3 /* AppDelegate+AppUrlConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AppUrlConfig.h"; sourceTree = "<group>"; };
+		B337C9602143CDC600E854F3 /* AppDelegate+AppUrlConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AppUrlConfig.m"; sourceTree = "<group>"; };
+		B337C9622143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AdapterForIOS11.h"; sourceTree = "<group>"; };
+		B337C9632143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AdapterForIOS11.m"; sourceTree = "<group>"; };
+		B337C9682143CF4100E854F3 /* BMGlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMGlobalDefine.h; sourceTree = "<group>"; };
 		E061B8EBE6A74E505838B10C /* Pods-BaseMVVM-RAC-Router.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseMVVM-RAC-Router.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,17 +103,135 @@
 		B337C9232143BCFB00E854F3 /* BaseMVVM-RAC-Router */ = {
 			isa = PBXGroup;
 			children = (
-				B337C9242143BCFB00E854F3 /* AppDelegate.h */,
-				B337C9252143BCFB00E854F3 /* AppDelegate.m */,
+				B337C9522143CC3E00E854F3 /* Me */,
+				B337C9492143C9E100E854F3 /* Home */,
+				B337C9412143C18B00E854F3 /* TabbarController */,
+				B337C9402143C13D00E854F3 /* AppDelegate */,
+				B337C92A2143BCFB00E854F3 /* Main.storyboard */,
 				B337C9272143BCFB00E854F3 /* ViewController.h */,
 				B337C9282143BCFB00E854F3 /* ViewController.m */,
-				B337C92A2143BCFB00E854F3 /* Main.storyboard */,
+				B337C9652143CEE500E854F3 /* Constant */,
 				B337C92D2143BCFC00E854F3 /* Assets.xcassets */,
 				B337C92F2143BCFC00E854F3 /* LaunchScreen.storyboard */,
 				B337C9322143BCFC00E854F3 /* Info.plist */,
 				B337C9332143BCFC00E854F3 /* main.m */,
 			);
 			path = "BaseMVVM-RAC-Router";
+			sourceTree = "<group>";
+		};
+		B337C9402143C13D00E854F3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B337C9242143BCFB00E854F3 /* AppDelegate.h */,
+				B337C9252143BCFB00E854F3 /* AppDelegate.m */,
+				B337C93D2143C11F00E854F3 /* AppDelegate+RouterSupport.h */,
+				B337C93E2143C11F00E854F3 /* AppDelegate+RouterSupport.m */,
+				B337C9622143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.h */,
+				B337C9632143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m */,
+				B337C95F2143CDC600E854F3 /* AppDelegate+AppUrlConfig.h */,
+				B337C9602143CDC600E854F3 /* AppDelegate+AppUrlConfig.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B337C9412143C18B00E854F3 /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				B337C9422143C1D800E854F3 /* BMTabbarController.h */,
+				B337C9432143C1D800E854F3 /* BMTabbarController.m */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		B337C9492143C9E100E854F3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B337C9512143CC1400E854F3 /* Controller */,
+				B337C94E2143CC1400E854F3 /* Model */,
+				B337C9502143CC1400E854F3 /* View */,
+				B337C94F2143CC1400E854F3 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B337C94E2143CC1400E854F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B337C94F2143CC1400E854F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B337C9502143CC1400E854F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B337C9512143CC1400E854F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B337C9522143CC3E00E854F3 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				B337C9532143CC3E00E854F3 /* ViewModel */,
+				B337C9542143CC3E00E854F3 /* Controller */,
+				B337C9552143CC3E00E854F3 /* Model */,
+				B337C9562143CC3E00E854F3 /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		B337C9532143CC3E00E854F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B337C95C2143CC8A00E854F3 /* BMLoginViewModel.h */,
+				B337C95D2143CC8A00E854F3 /* BMLoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B337C9542143CC3E00E854F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B337C9572143CC5800E854F3 /* BMLoginViewController.h */,
+				B337C9582143CC5800E854F3 /* BMLoginViewController.m */,
+				B337C9592143CC5800E854F3 /* BMLoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B337C9552143CC3E00E854F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B337C9562143CC3E00E854F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B337C9652143CEE500E854F3 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B337C9682143CF4100E854F3 /* BMGlobalDefine.h */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B337C9312143BCFC00E854F3 /* LaunchScreen.storyboard in Resources */,
+				B337C95B2143CC5800E854F3 /* BMLoginViewController.xib in Resources */,
 				B337C92E2143BCFC00E854F3 /* Assets.xcassets in Resources */,
 				B337C92C2143BCFB00E854F3 /* Main.storyboard in Resources */,
 			);
@@ -226,6 +366,12 @@
 				B337C9292143BCFB00E854F3 /* ViewController.m in Sources */,
 				B337C9342143BCFC00E854F3 /* main.m in Sources */,
 				B337C9262143BCFB00E854F3 /* AppDelegate.m in Sources */,
+				B337C9442143C1D800E854F3 /* BMTabbarController.m in Sources */,
+				B337C95E2143CC8A00E854F3 /* BMLoginViewModel.m in Sources */,
+				B337C93F2143C11F00E854F3 /* AppDelegate+RouterSupport.m in Sources */,
+				B337C9612143CDC600E854F3 /* AppDelegate+AppUrlConfig.m in Sources */,
+				B337C9642143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m in Sources */,
+				B337C95A2143CC5800E854F3 /* BMLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,9 +514,37 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6GQNP4GGNP;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/baseMVVM-RAC-Router/Constant/BMGlobalDefine.h";
 				INFOPLIST_FILE = "BaseMVVM-RAC-Router/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"JLRoutes\"",
+					"-l\"Masonry\"",
+					"-l\"SVProgressHUD\"",
+					"-l\"YTKNetwork\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-w",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "leios.BaseMVVM-RAC-Router";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -384,9 +558,37 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6GQNP4GGNP;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/baseMVVM-RAC-Router/Constant/BMGlobalDefine.h";
 				INFOPLIST_FILE = "BaseMVVM-RAC-Router/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"JLRoutes\"",
+					"-l\"Masonry\"",
+					"-l\"SVProgressHUD\"",
+					"-l\"YTKNetwork\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-w",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "leios.BaseMVVM-RAC-Router";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
