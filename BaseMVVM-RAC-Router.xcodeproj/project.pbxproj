@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		270B9F9D7228A7BBBA856351 /* libPods-BaseMVVM-RAC-Router.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 916A7F0AB6F5EB2784FAFBB9 /* libPods-BaseMVVM-RAC-Router.a */; };
+		B337C9262143BCFB00E854F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9252143BCFB00E854F3 /* AppDelegate.m */; };
+		B337C9292143BCFB00E854F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9282143BCFB00E854F3 /* ViewController.m */; };
+		B337C92C2143BCFB00E854F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B337C92A2143BCFB00E854F3 /* Main.storyboard */; };
+		B337C92E2143BCFC00E854F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B337C92D2143BCFC00E854F3 /* Assets.xcassets */; };
+		B337C9312143BCFC00E854F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B337C92F2143BCFC00E854F3 /* LaunchScreen.storyboard */; };
+		B337C9342143BCFC00E854F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9332143BCFC00E854F3 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8293D4D4B2A13C4DD2BE7FDE /* Pods-BaseMVVM-RAC-Router.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseMVVM-RAC-Router.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router.release.xcconfig"; sourceTree = "<group>"; };
+		916A7F0AB6F5EB2784FAFBB9 /* libPods-BaseMVVM-RAC-Router.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseMVVM-RAC-Router.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B337C9212143BCFB00E854F3 /* BaseMVVM-RAC-Router.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaseMVVM-RAC-Router.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B337C9242143BCFB00E854F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B337C9252143BCFB00E854F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B337C9272143BCFB00E854F3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B337C9282143BCFB00E854F3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B337C92B2143BCFB00E854F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B337C92D2143BCFC00E854F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B337C9302143BCFC00E854F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B337C9322143BCFC00E854F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B337C9332143BCFC00E854F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E061B8EBE6A74E505838B10C /* Pods-BaseMVVM-RAC-Router.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseMVVM-RAC-Router.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B337C91E2143BCFB00E854F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270B9F9D7228A7BBBA856351 /* libPods-BaseMVVM-RAC-Router.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A07ED6135AD966A87391E48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E061B8EBE6A74E505838B10C /* Pods-BaseMVVM-RAC-Router.debug.xcconfig */,
+				8293D4D4B2A13C4DD2BE7FDE /* Pods-BaseMVVM-RAC-Router.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8386CAE9C7AB971D57C9C32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				916A7F0AB6F5EB2784FAFBB9 /* libPods-BaseMVVM-RAC-Router.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B337C9182143BCFB00E854F3 = {
+			isa = PBXGroup;
+			children = (
+				B337C9232143BCFB00E854F3 /* BaseMVVM-RAC-Router */,
+				B337C9222143BCFB00E854F3 /* Products */,
+				7A07ED6135AD966A87391E48 /* Pods */,
+				A8386CAE9C7AB971D57C9C32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B337C9222143BCFB00E854F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B337C9212143BCFB00E854F3 /* BaseMVVM-RAC-Router.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B337C9232143BCFB00E854F3 /* BaseMVVM-RAC-Router */ = {
+			isa = PBXGroup;
+			children = (
+				B337C9242143BCFB00E854F3 /* AppDelegate.h */,
+				B337C9252143BCFB00E854F3 /* AppDelegate.m */,
+				B337C9272143BCFB00E854F3 /* ViewController.h */,
+				B337C9282143BCFB00E854F3 /* ViewController.m */,
+				B337C92A2143BCFB00E854F3 /* Main.storyboard */,
+				B337C92D2143BCFC00E854F3 /* Assets.xcassets */,
+				B337C92F2143BCFC00E854F3 /* LaunchScreen.storyboard */,
+				B337C9322143BCFC00E854F3 /* Info.plist */,
+				B337C9332143BCFC00E854F3 /* main.m */,
+			);
+			path = "BaseMVVM-RAC-Router";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B337C9202143BCFB00E854F3 /* BaseMVVM-RAC-Router */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B337C9372143BCFC00E854F3 /* Build configuration list for PBXNativeTarget "BaseMVVM-RAC-Router" */;
+			buildPhases = (
+				52765D0531360C4E5A5D0314 /* [CP] Check Pods Manifest.lock */,
+				B337C91D2143BCFB00E854F3 /* Sources */,
+				B337C91E2143BCFB00E854F3 /* Frameworks */,
+				B337C91F2143BCFB00E854F3 /* Resources */,
+				8392E4D4F824CE652B2491A1 /* [CP] Embed Pods Frameworks */,
+				0D717E820FF94AB3AD53EE1C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BaseMVVM-RAC-Router";
+			productName = "BaseMVVM-RAC-Router";
+			productReference = B337C9212143BCFB00E854F3 /* BaseMVVM-RAC-Router.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B337C9192143BCFB00E854F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = leios;
+				TargetAttributes = {
+					B337C9202143BCFB00E854F3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B337C91C2143BCFB00E854F3 /* Build configuration list for PBXProject "BaseMVVM-RAC-Router" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B337C9182143BCFB00E854F3;
+			productRefGroup = B337C9222143BCFB00E854F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B337C9202143BCFB00E854F3 /* BaseMVVM-RAC-Router */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B337C91F2143BCFB00E854F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B337C9312143BCFC00E854F3 /* LaunchScreen.storyboard in Resources */,
+				B337C92E2143BCFC00E854F3 /* Assets.xcassets in Resources */,
+				B337C92C2143BCFB00E854F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D717E820FF94AB3AD53EE1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52765D0531360C4E5A5D0314 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseMVVM-RAC-Router-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8392E4D4F824CE652B2491A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B337C91D2143BCFB00E854F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B337C9292143BCFB00E854F3 /* ViewController.m in Sources */,
+				B337C9342143BCFC00E854F3 /* main.m in Sources */,
+				B337C9262143BCFB00E854F3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B337C92A2143BCFB00E854F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B337C92B2143BCFB00E854F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B337C92F2143BCFC00E854F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B337C9302143BCFC00E854F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B337C9352143BCFC00E854F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B337C9362143BCFC00E854F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B337C9382143BCFC00E854F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E061B8EBE6A74E505838B10C /* Pods-BaseMVVM-RAC-Router.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GQNP4GGNP;
+				INFOPLIST_FILE = "BaseMVVM-RAC-Router/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "leios.BaseMVVM-RAC-Router";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B337C9392143BCFC00E854F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8293D4D4B2A13C4DD2BE7FDE /* Pods-BaseMVVM-RAC-Router.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GQNP4GGNP;
+				INFOPLIST_FILE = "BaseMVVM-RAC-Router/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "leios.BaseMVVM-RAC-Router";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B337C91C2143BCFB00E854F3 /* Build configuration list for PBXProject "BaseMVVM-RAC-Router" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B337C9352143BCFC00E854F3 /* Debug */,
+				B337C9362143BCFC00E854F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B337C9372143BCFC00E854F3 /* Build configuration list for PBXNativeTarget "BaseMVVM-RAC-Router" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B337C9382143BCFC00E854F3 /* Debug */,
+				B337C9392143BCFC00E854F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B337C9192143BCFB00E854F3 /* Project object */;
+}
