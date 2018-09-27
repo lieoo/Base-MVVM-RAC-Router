@@ -21,6 +21,9 @@
 		B337C95E2143CC8A00E854F3 /* BMLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C95D2143CC8A00E854F3 /* BMLoginViewModel.m */; };
 		B337C9612143CDC600E854F3 /* AppDelegate+AppUrlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9602143CDC600E854F3 /* AppDelegate+AppUrlConfig.m */; };
 		B337C9642143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9632143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m */; };
+		B337C96B2143D37400E854F3 /* AppDelegate+RouterRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C96A2143D37400E854F3 /* AppDelegate+RouterRegister.m */; };
+		B35A2E73215CC09800534779 /* BMRouterConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E72215CC09800534779 /* BMRouterConstant.m */; };
+		B35A2E78215CC12D00534779 /* JLRoutes+GenerateURL.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E77215CC12C00534779 /* JLRoutes+GenerateURL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,12 @@
 		B337C9622143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AdapterForIOS11.h"; sourceTree = "<group>"; };
 		B337C9632143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AdapterForIOS11.m"; sourceTree = "<group>"; };
 		B337C9682143CF4100E854F3 /* BMGlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMGlobalDefine.h; sourceTree = "<group>"; };
+		B337C9692143D37400E854F3 /* AppDelegate+RouterRegister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+RouterRegister.h"; sourceTree = "<group>"; };
+		B337C96A2143D37400E854F3 /* AppDelegate+RouterRegister.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+RouterRegister.m"; sourceTree = "<group>"; };
+		B35A2E72215CC09800534779 /* BMRouterConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMRouterConstant.m; sourceTree = "<group>"; };
+		B35A2E74215CC0A800534779 /* BMRouterConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMRouterConstant.h; sourceTree = "<group>"; };
+		B35A2E76215CC12C00534779 /* JLRoutes+GenerateURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLRoutes+GenerateURL.h"; sourceTree = "<group>"; };
+		B35A2E77215CC12C00534779 /* JLRoutes+GenerateURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JLRoutes+GenerateURL.m"; sourceTree = "<group>"; };
 		E061B8EBE6A74E505838B10C /* Pods-BaseMVVM-RAC-Router.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseMVVM-RAC-Router.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,11 +116,12 @@
 				B337C9492143C9E100E854F3 /* Home */,
 				B337C9412143C18B00E854F3 /* TabbarController */,
 				B337C9402143C13D00E854F3 /* AppDelegate */,
-				B337C92A2143BCFB00E854F3 /* Main.storyboard */,
 				B337C9272143BCFB00E854F3 /* ViewController.h */,
 				B337C9282143BCFB00E854F3 /* ViewController.m */,
+				B337C96C2143D54C00E854F3 /* Router */,
 				B337C9652143CEE500E854F3 /* Constant */,
 				B337C92D2143BCFC00E854F3 /* Assets.xcassets */,
+				B337C92A2143BCFB00E854F3 /* Main.storyboard */,
 				B337C92F2143BCFC00E854F3 /* LaunchScreen.storyboard */,
 				B337C9322143BCFC00E854F3 /* Info.plist */,
 				B337C9332143BCFC00E854F3 /* main.m */,
@@ -130,6 +140,8 @@
 				B337C9632143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m */,
 				B337C95F2143CDC600E854F3 /* AppDelegate+AppUrlConfig.h */,
 				B337C9602143CDC600E854F3 /* AppDelegate+AppUrlConfig.m */,
+				B337C9692143D37400E854F3 /* AppDelegate+RouterRegister.h */,
+				B337C96A2143D37400E854F3 /* AppDelegate+RouterRegister.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -146,10 +158,10 @@
 		B337C9492143C9E100E854F3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B337C94F2143CC1400E854F3 /* ViewModel */,
 				B337C9512143CC1400E854F3 /* Controller */,
 				B337C94E2143CC1400E854F3 /* Model */,
 				B337C9502143CC1400E854F3 /* View */,
-				B337C94F2143CC1400E854F3 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -234,6 +246,17 @@
 			path = Constant;
 			sourceTree = "<group>";
 		};
+		B337C96C2143D54C00E854F3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B35A2E74215CC0A800534779 /* BMRouterConstant.h */,
+				B35A2E72215CC09800534779 /* BMRouterConstant.m */,
+				B35A2E76215CC12C00534779 /* JLRoutes+GenerateURL.h */,
+				B35A2E77215CC12C00534779 /* JLRoutes+GenerateURL.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,7 +268,6 @@
 				B337C91D2143BCFB00E854F3 /* Sources */,
 				B337C91E2143BCFB00E854F3 /* Frameworks */,
 				B337C91F2143BCFB00E854F3 /* Resources */,
-				8392E4D4F824CE652B2491A1 /* [CP] Embed Pods Frameworks */,
 				0D717E820FF94AB3AD53EE1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -341,21 +363,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8392E4D4F824CE652B2491A1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -365,12 +372,15 @@
 			files = (
 				B337C9292143BCFB00E854F3 /* ViewController.m in Sources */,
 				B337C9342143BCFC00E854F3 /* main.m in Sources */,
+				B35A2E78215CC12D00534779 /* JLRoutes+GenerateURL.m in Sources */,
 				B337C9262143BCFB00E854F3 /* AppDelegate.m in Sources */,
 				B337C9442143C1D800E854F3 /* BMTabbarController.m in Sources */,
+				B35A2E73215CC09800534779 /* BMRouterConstant.m in Sources */,
 				B337C95E2143CC8A00E854F3 /* BMLoginViewModel.m in Sources */,
 				B337C93F2143C11F00E854F3 /* AppDelegate+RouterSupport.m in Sources */,
 				B337C9612143CDC600E854F3 /* AppDelegate+AppUrlConfig.m in Sources */,
 				B337C9642143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m in Sources */,
+				B337C96B2143D37400E854F3 /* AppDelegate+RouterRegister.m in Sources */,
 				B337C95A2143CC5800E854F3 /* BMLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,12 +522,13 @@
 			baseConfigurationReference = E061B8EBE6A74E505838B10C /* Pods-BaseMVVM-RAC-Router.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6GQNP4GGNP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/baseMVVM-RAC-Router/Constant/BMGlobalDefine.h";
 				INFOPLIST_FILE = "BaseMVVM-RAC-Router/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -556,12 +567,13 @@
 			baseConfigurationReference = 8293D4D4B2A13C4DD2BE7FDE /* Pods-BaseMVVM-RAC-Router.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6GQNP4GGNP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/baseMVVM-RAC-Router/Constant/BMGlobalDefine.h";
 				INFOPLIST_FILE = "BaseMVVM-RAC-Router/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",

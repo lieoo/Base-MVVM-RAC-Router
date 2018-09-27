@@ -26,6 +26,14 @@ DEPENDENCIES:
   - SVProgressHUD (~> 2.2.2)
   - YTKNetwork (~> 2.0.3)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - JLRoutes
+    - Masonry
+    - SVProgressHUD
+    - YTKNetwork
+
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   JLRoutes: 92dcba8bdc54cc18af06ab5578ca1180cb3c83bb
@@ -33,6 +41,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
 
-PODFILE CHECKSUM: 2e469909f32c931684f19bce9cb76aa6884f7cc1
+PODFILE CHECKSUM: 8f6d1e58aace1bb58b64118a33cde9bc9635c85f
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

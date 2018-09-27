@@ -22,4 +22,7 @@ target 'BaseMVVM-RAC-Router' do
 # 网络请求框架
   pod 'YTKNetwork', '~> 2.0.3'
 
+  
+  inhibit_all_warnings!
+
 end
