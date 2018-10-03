@@ -1,46 +1,54 @@
 PODS:
-  - AFNetworking (3.2.0):
-    - AFNetworking/NSURLSession (= 3.2.0)
-    - AFNetworking/Reachability (= 3.2.0)
-    - AFNetworking/Security (= 3.2.0)
-    - AFNetworking/Serialization (= 3.2.0)
-    - AFNetworking/UIKit (= 3.2.0)
-  - AFNetworking/NSURLSession (3.2.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.0)
-  - AFNetworking/Security (3.2.0)
-  - AFNetworking/Serialization (3.2.0)
-  - AFNetworking/UIKit (3.2.0):
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
   - JLRoutes (2.0.6)
   - Masonry (1.0.2)
+  - ReactiveObjC (3.0.0)
   - SVProgressHUD (2.2.5)
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
 
 DEPENDENCIES:
+  - Aspects (~> 1.4.1)
   - JLRoutes (~> 2.0.5)
   - Masonry (~> 1.0.2)
+  - ReactiveObjC (~> 3.0.0)
   - SVProgressHUD (~> 2.2.2)
   - YTKNetwork (~> 2.0.3)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Aspects
     - JLRoutes
     - Masonry
+    - ReactiveObjC
     - SVProgressHUD
     - YTKNetwork
 
 SPEC CHECKSUMS:
-  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   JLRoutes: 92dcba8bdc54cc18af06ab5578ca1180cb3c83bb
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
 
-PODFILE CHECKSUM: 8f6d1e58aace1bb58b64118a33cde9bc9635c85f
+PODFILE CHECKSUM: b4cc76f04fe9c26a2a9ea54086c389c74de5c38f
 
 COCOAPODS: 1.5.3

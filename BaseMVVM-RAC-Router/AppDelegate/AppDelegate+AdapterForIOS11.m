@@ -7,14 +7,16 @@
 //
 
 #import "AppDelegate+AdapterForIOS11.h"
-#import <WebKit/WebKit.h>
+//#import <WebKit/WebKit.h>
 @implementation AppDelegate (AdapterForIOS11)
-- (void)configScrollViewAdapt4IOS11{
+
+
++ (void)configScrollViewAdapt4IOS11{
     
     
     if (@available(iOS 11.0, *)) {
         
-        [WKWebView appearance].scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//        [WKWebView appearance].scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         [UIScrollView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         [UITableView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         [UIWebView appearance].scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;

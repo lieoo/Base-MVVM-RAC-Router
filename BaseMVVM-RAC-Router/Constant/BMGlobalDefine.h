@@ -31,6 +31,7 @@
 #pragma mark - 版本检查
 
 // 版本检查
+#define IOS12_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"12.0" options:NSNumericSearch] != NSOrderedAscending )
 #define IOS11_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"11.0" options:NSNumericSearch] != NSOrderedAscending )
 #define IOS10_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"10.0" options:NSNumericSearch] != NSOrderedAscending )
 #define IOS9_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"9.0" options:NSNumericSearch] != NSOrderedAscending )
@@ -41,6 +42,17 @@
 #define IOS4_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"4.0" options:NSNumericSearch] != NSOrderedAscending )
 #define IOS3_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"3.0" options:NSNumericSearch] != NSOrderedAscending )
 
+
+
+//#pragma clang diagnostic push
+//
+//#pragma clang diagnostic ignored "Null passed to a callee that requires a non-null argument"
+//
+//#pragma clang diagnostic ignored "Format String Issue Group"
+//
+//#pragma clang diagnostic pop
+//
+//#pragma clang diagnostic ignored "Null passed to a callee that requires a non-null argument"
 
 
 #endif /* BMGlobalDefine_h */

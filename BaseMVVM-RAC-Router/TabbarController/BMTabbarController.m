@@ -27,10 +27,10 @@
 }
 - (void)setUpChildItemsTabbar {
     NSArray *childItemsArray = @[
-                                 @{kClassKey  : @"VYBGameCenterViewController",
+                                 @{kClassKey  : @"BMHomeViewController",
                                    kTitleKey  : @"首页",
-                                   kImgKey    : @"",
-                                   kSelImgKey : @""}
+                                   kImgKey    : @"login_show_pwd",
+                                   kSelImgKey : @"login_hide_pwd"}
                                  ];
     
     [childItemsArray enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL *stop) {

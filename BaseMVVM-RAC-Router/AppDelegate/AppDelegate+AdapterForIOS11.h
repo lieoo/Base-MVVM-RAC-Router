@@ -10,6 +10,6 @@
 
 @interface AppDelegate (AdapterForIOS11)
 
-- (void)configScrollViewAdapt4IOS11;
++ (void)configScrollViewAdapt4IOS11;
 
 @end

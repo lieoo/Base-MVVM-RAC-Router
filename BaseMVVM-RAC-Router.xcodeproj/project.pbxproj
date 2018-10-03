@@ -7,28 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		270B9F9D7228A7BBBA856351 /* libPods-BaseMVVM-RAC-Router.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 916A7F0AB6F5EB2784FAFBB9 /* libPods-BaseMVVM-RAC-Router.a */; };
+		B332EDDA2164A8B9009AD9AB /* AppDelegate+RegisRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B332EDD92164A8B9009AD9AB /* AppDelegate+RegisRouter.m */; };
+		B332EDDD2164A9FB009AD9AB /* JLRoutes+GenerateURLSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B332EDDC2164A9FB009AD9AB /* JLRoutes+GenerateURLSupport.m */; };
 		B337C9262143BCFB00E854F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9252143BCFB00E854F3 /* AppDelegate.m */; };
 		B337C9292143BCFB00E854F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9282143BCFB00E854F3 /* ViewController.m */; };
 		B337C92C2143BCFB00E854F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B337C92A2143BCFB00E854F3 /* Main.storyboard */; };
 		B337C92E2143BCFC00E854F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B337C92D2143BCFC00E854F3 /* Assets.xcassets */; };
 		B337C9312143BCFC00E854F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B337C92F2143BCFC00E854F3 /* LaunchScreen.storyboard */; };
 		B337C9342143BCFC00E854F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9332143BCFC00E854F3 /* main.m */; };
-		B337C93F2143C11F00E854F3 /* AppDelegate+RouterSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C93E2143C11F00E854F3 /* AppDelegate+RouterSupport.m */; };
 		B337C9442143C1D800E854F3 /* BMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9432143C1D800E854F3 /* BMTabbarController.m */; };
 		B337C95A2143CC5800E854F3 /* BMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9582143CC5800E854F3 /* BMLoginViewController.m */; };
 		B337C95B2143CC5800E854F3 /* BMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B337C9592143CC5800E854F3 /* BMLoginViewController.xib */; };
 		B337C95E2143CC8A00E854F3 /* BMLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C95D2143CC8A00E854F3 /* BMLoginViewModel.m */; };
 		B337C9612143CDC600E854F3 /* AppDelegate+AppUrlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9602143CDC600E854F3 /* AppDelegate+AppUrlConfig.m */; };
 		B337C9642143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9632143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m */; };
-		B337C96B2143D37400E854F3 /* AppDelegate+RouterRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C96A2143D37400E854F3 /* AppDelegate+RouterRegister.m */; };
 		B35A2E73215CC09800534779 /* BMRouterConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E72215CC09800534779 /* BMRouterConstant.m */; };
-		B35A2E78215CC12D00534779 /* JLRoutes+GenerateURL.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E77215CC12C00534779 /* JLRoutes+GenerateURL.m */; };
+		B35A2E7C215CD49300534779 /* BMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E7B215CD49300534779 /* BMHomeViewModel.m */; };
+		B35A2E83215CD4C100534779 /* BMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E81215CD4C100534779 /* BMHomeViewController.m */; };
+		B35A2E84215CD4C100534779 /* BMHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B35A2E82215CD4C100534779 /* BMHomeViewController.xib */; };
+		B35A2E88215DBAB900534779 /* NSObject+NonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E87215DBAB900534779 /* NSObject+NonBase.m */; };
+		B35A2E8B215DBC2F00534779 /* UIViewController+NonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E8A215DBC2F00534779 /* UIViewController+NonBase.m */; };
+		B3D76A152164B9A70080CC74 /* Pods_BaseMVVM_RAC_Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D76A142164B9A70080CC74 /* Pods_BaseMVVM_RAC_Router.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8293D4D4B2A13C4DD2BE7FDE /* Pods-BaseMVVM-RAC-Router.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseMVVM-RAC-Router.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router.release.xcconfig"; sourceTree = "<group>"; };
-		916A7F0AB6F5EB2784FAFBB9 /* libPods-BaseMVVM-RAC-Router.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseMVVM-RAC-Router.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B332EDD82164A8B9009AD9AB /* AppDelegate+RegisRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+RegisRouter.h"; sourceTree = "<group>"; };
+		B332EDD92164A8B9009AD9AB /* AppDelegate+RegisRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+RegisRouter.m"; sourceTree = "<group>"; };
+		B332EDDB2164A9FB009AD9AB /* JLRoutes+GenerateURLSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLRoutes+GenerateURLSupport.h"; sourceTree = "<group>"; };
+		B332EDDC2164A9FB009AD9AB /* JLRoutes+GenerateURLSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JLRoutes+GenerateURLSupport.m"; sourceTree = "<group>"; };
 		B337C9212143BCFB00E854F3 /* BaseMVVM-RAC-Router.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaseMVVM-RAC-Router.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B337C9242143BCFB00E854F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B337C9252143BCFB00E854F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,8 +46,6 @@
 		B337C9302143BCFC00E854F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B337C9322143BCFC00E854F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B337C9332143BCFC00E854F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B337C93D2143C11F00E854F3 /* AppDelegate+RouterSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+RouterSupport.h"; sourceTree = "<group>"; };
-		B337C93E2143C11F00E854F3 /* AppDelegate+RouterSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+RouterSupport.m"; sourceTree = "<group>"; };
 		B337C9422143C1D800E854F3 /* BMTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMTabbarController.h; sourceTree = "<group>"; };
 		B337C9432143C1D800E854F3 /* BMTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMTabbarController.m; sourceTree = "<group>"; };
 		B337C9572143CC5800E854F3 /* BMLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMLoginViewController.h; sourceTree = "<group>"; };
@@ -53,13 +58,29 @@
 		B337C9622143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AdapterForIOS11.h"; sourceTree = "<group>"; };
 		B337C9632143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AdapterForIOS11.m"; sourceTree = "<group>"; };
 		B337C9682143CF4100E854F3 /* BMGlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMGlobalDefine.h; sourceTree = "<group>"; };
-		B337C9692143D37400E854F3 /* AppDelegate+RouterRegister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+RouterRegister.h"; sourceTree = "<group>"; };
-		B337C96A2143D37400E854F3 /* AppDelegate+RouterRegister.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+RouterRegister.m"; sourceTree = "<group>"; };
 		B35A2E72215CC09800534779 /* BMRouterConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMRouterConstant.m; sourceTree = "<group>"; };
 		B35A2E74215CC0A800534779 /* BMRouterConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMRouterConstant.h; sourceTree = "<group>"; };
-		B35A2E76215CC12C00534779 /* JLRoutes+GenerateURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLRoutes+GenerateURL.h"; sourceTree = "<group>"; };
-		B35A2E77215CC12C00534779 /* JLRoutes+GenerateURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JLRoutes+GenerateURL.m"; sourceTree = "<group>"; };
+		B35A2E79215CCE3D00534779 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
+		B35A2E7A215CD49300534779 /* BMHomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMHomeViewModel.h; sourceTree = "<group>"; };
+		B35A2E7B215CD49300534779 /* BMHomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMHomeViewModel.m; sourceTree = "<group>"; };
+		B35A2E80215CD4C100534779 /* BMHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMHomeViewController.h; sourceTree = "<group>"; };
+		B35A2E81215CD4C100534779 /* BMHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMHomeViewController.m; sourceTree = "<group>"; };
+		B35A2E82215CD4C100534779 /* BMHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMHomeViewController.xib; sourceTree = "<group>"; };
+		B35A2E86215DBAB900534779 /* NSObject+NonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NonBase.h"; sourceTree = "<group>"; };
+		B35A2E87215DBAB900534779 /* NSObject+NonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NonBase.m"; sourceTree = "<group>"; };
+		B35A2E89215DBC2F00534779 /* UIViewController+NonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NonBase.h"; sourceTree = "<group>"; };
+		B35A2E8A215DBC2F00534779 /* UIViewController+NonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NonBase.m"; sourceTree = "<group>"; };
+		B35A2E8C215DBCA400534779 /* BMViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMViewControllerProtocol.h; sourceTree = "<group>"; };
+		B3D76A062164B4FF0080CC74 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D76A082164B5090080CC74 /* Pods_BaseMVVM_RAC_Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BaseMVVM_RAC_Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D76A0A2164B52A0080CC74 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D76A0C2164B5530080CC74 /* YTKNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YTKNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D76A0E2164B55A0080CC74 /* ReactiveObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D76A102164B5910080CC74 /* Pods_BaseMVVM_RAC_Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BaseMVVM_RAC_Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D76A122164B5DC0080CC74 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D76A142164B9A70080CC74 /* Pods_BaseMVVM_RAC_Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BaseMVVM_RAC_Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E061B8EBE6A74E505838B10C /* Pods-BaseMVVM-RAC-Router.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseMVVM-RAC-Router.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router.debug.xcconfig"; sourceTree = "<group>"; };
+		E90C9BF2E2401C2369645AB0 /* Pods_BaseMVVM_RAC_Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseMVVM_RAC_Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				270B9F9D7228A7BBBA856351 /* libPods-BaseMVVM-RAC-Router.a in Frameworks */,
+				B3D76A152164B9A70080CC74 /* Pods_BaseMVVM_RAC_Router.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +107,15 @@
 		A8386CAE9C7AB971D57C9C32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				916A7F0AB6F5EB2784FAFBB9 /* libPods-BaseMVVM-RAC-Router.a */,
+				B3D76A142164B9A70080CC74 /* Pods_BaseMVVM_RAC_Router.framework */,
+				B3D76A122164B5DC0080CC74 /* AFNetworking.framework */,
+				B3D76A102164B5910080CC74 /* Pods_BaseMVVM_RAC_Router.framework */,
+				B3D76A0E2164B55A0080CC74 /* ReactiveObjC.framework */,
+				B3D76A0C2164B5530080CC74 /* YTKNetwork.framework */,
+				B3D76A0A2164B52A0080CC74 /* AFNetworking.framework */,
+				B3D76A082164B5090080CC74 /* Pods_BaseMVVM_RAC_Router.framework */,
+				B3D76A062164B4FF0080CC74 /* AFNetworking.framework */,
+				E90C9BF2E2401C2369645AB0 /* Pods_BaseMVVM_RAC_Router.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +147,11 @@
 				B337C9402143C13D00E854F3 /* AppDelegate */,
 				B337C9272143BCFB00E854F3 /* ViewController.h */,
 				B337C9282143BCFB00E854F3 /* ViewController.m */,
+				B35A2E86215DBAB900534779 /* NSObject+NonBase.h */,
+				B35A2E87215DBAB900534779 /* NSObject+NonBase.m */,
+				B35A2E89215DBC2F00534779 /* UIViewController+NonBase.h */,
+				B35A2E8A215DBC2F00534779 /* UIViewController+NonBase.m */,
+				B35A2E8C215DBCA400534779 /* BMViewControllerProtocol.h */,
 				B337C96C2143D54C00E854F3 /* Router */,
 				B337C9652143CEE500E854F3 /* Constant */,
 				B337C92D2143BCFC00E854F3 /* Assets.xcassets */,
@@ -134,14 +168,12 @@
 			children = (
 				B337C9242143BCFB00E854F3 /* AppDelegate.h */,
 				B337C9252143BCFB00E854F3 /* AppDelegate.m */,
-				B337C93D2143C11F00E854F3 /* AppDelegate+RouterSupport.h */,
-				B337C93E2143C11F00E854F3 /* AppDelegate+RouterSupport.m */,
 				B337C9622143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.h */,
 				B337C9632143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m */,
 				B337C95F2143CDC600E854F3 /* AppDelegate+AppUrlConfig.h */,
 				B337C9602143CDC600E854F3 /* AppDelegate+AppUrlConfig.m */,
-				B337C9692143D37400E854F3 /* AppDelegate+RouterRegister.h */,
-				B337C96A2143D37400E854F3 /* AppDelegate+RouterRegister.m */,
+				B332EDD82164A8B9009AD9AB /* AppDelegate+RegisRouter.h */,
+				B332EDD92164A8B9009AD9AB /* AppDelegate+RegisRouter.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -176,6 +208,8 @@
 		B337C94F2143CC1400E854F3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B35A2E7A215CD49300534779 /* BMHomeViewModel.h */,
+				B35A2E7B215CD49300534779 /* BMHomeViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -190,6 +224,9 @@
 		B337C9512143CC1400E854F3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B35A2E80215CD4C100534779 /* BMHomeViewController.h */,
+				B35A2E81215CD4C100534779 /* BMHomeViewController.m */,
+				B35A2E82215CD4C100534779 /* BMHomeViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -242,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				B337C9682143CF4100E854F3 /* BMGlobalDefine.h */,
+				B35A2E79215CCE3D00534779 /* PrefixHeader.h */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -251,8 +289,8 @@
 			children = (
 				B35A2E74215CC0A800534779 /* BMRouterConstant.h */,
 				B35A2E72215CC09800534779 /* BMRouterConstant.m */,
-				B35A2E76215CC12C00534779 /* JLRoutes+GenerateURL.h */,
-				B35A2E77215CC12C00534779 /* JLRoutes+GenerateURL.m */,
+				B332EDDB2164A9FB009AD9AB /* JLRoutes+GenerateURLSupport.h */,
+				B332EDDC2164A9FB009AD9AB /* JLRoutes+GenerateURLSupport.m */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -268,7 +306,7 @@
 				B337C91D2143BCFB00E854F3 /* Sources */,
 				B337C91E2143BCFB00E854F3 /* Frameworks */,
 				B337C91F2143BCFB00E854F3 /* Resources */,
-				0D717E820FF94AB3AD53EE1C /* [CP] Copy Pods Resources */,
+				BFF6C72A5AB4B884CFAEE382 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B337C9312143BCFC00E854F3 /* LaunchScreen.storyboard in Resources */,
+				B35A2E84215CD4C100534779 /* BMHomeViewController.xib in Resources */,
 				B337C95B2143CC5800E854F3 /* BMLoginViewController.xib in Resources */,
 				B337C92E2143BCFC00E854F3 /* Assets.xcassets in Resources */,
 				B337C92C2143BCFB00E854F3 /* Main.storyboard in Resources */,
@@ -327,24 +366,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D717E820FF94AB3AD53EE1C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router-resources.sh",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		52765D0531360C4E5A5D0314 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,6 +384,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BFF6C72A5AB4B884CFAEE382 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
+				"${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLRoutes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseMVVM-RAC-Router/Pods-BaseMVVM-RAC-Router-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -372,15 +427,18 @@
 			files = (
 				B337C9292143BCFB00E854F3 /* ViewController.m in Sources */,
 				B337C9342143BCFC00E854F3 /* main.m in Sources */,
-				B35A2E78215CC12D00534779 /* JLRoutes+GenerateURL.m in Sources */,
+				B35A2E83215CD4C100534779 /* BMHomeViewController.m in Sources */,
+				B35A2E8B215DBC2F00534779 /* UIViewController+NonBase.m in Sources */,
+				B35A2E88215DBAB900534779 /* NSObject+NonBase.m in Sources */,
+				B332EDDD2164A9FB009AD9AB /* JLRoutes+GenerateURLSupport.m in Sources */,
 				B337C9262143BCFB00E854F3 /* AppDelegate.m in Sources */,
 				B337C9442143C1D800E854F3 /* BMTabbarController.m in Sources */,
 				B35A2E73215CC09800534779 /* BMRouterConstant.m in Sources */,
+				B332EDDA2164A8B9009AD9AB /* AppDelegate+RegisRouter.m in Sources */,
 				B337C95E2143CC8A00E854F3 /* BMLoginViewModel.m in Sources */,
-				B337C93F2143C11F00E854F3 /* AppDelegate+RouterSupport.m in Sources */,
 				B337C9612143CDC600E854F3 /* AppDelegate+AppUrlConfig.m in Sources */,
 				B337C9642143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m in Sources */,
-				B337C96B2143D37400E854F3 /* AppDelegate+RouterRegister.m in Sources */,
+				B35A2E7C215CD49300534779 /* BMHomeViewModel.m in Sources */,
 				B337C95A2143CC5800E854F3 /* BMLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +520,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				WARNING_CFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -514,6 +573,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = "";
 			};
 			name = Release;
 		};
@@ -523,41 +583,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6GQNP4GGNP;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/baseMVVM-RAC-Router/Constant/BMGlobalDefine.h";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/baseMVVM-RAC-Router/Constant/PrefixHeader.h";
 				INFOPLIST_FILE = "BaseMVVM-RAC-Router/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"AFNetworking\"",
-					"-l\"JLRoutes\"",
-					"-l\"Masonry\"",
-					"-l\"SVProgressHUD\"",
-					"-l\"YTKNetwork\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"-w",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "leios.BaseMVVM-RAC-Router";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shixunProj.b;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -568,41 +605,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6GQNP4GGNP;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/baseMVVM-RAC-Router/Constant/BMGlobalDefine.h";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/baseMVVM-RAC-Router/Constant/PrefixHeader.h";
 				INFOPLIST_FILE = "BaseMVVM-RAC-Router/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"AFNetworking\"",
-					"-l\"JLRoutes\"",
-					"-l\"Masonry\"",
-					"-l\"SVProgressHUD\"",
-					"-l\"YTKNetwork\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"-w",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "leios.BaseMVVM-RAC-Router";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shixunProj.b;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

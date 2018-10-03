@@ -8,9 +8,16 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "AppDelegate+RouterSupport.h"
+#import "AppDelegate+AdapterForIOS11.h"
+#import "AppDelegate+RegisRouter.h"
 #import "AppDelegate+AppUrlConfig.h"
+#import "BMTabbarController.h"
+
+NSString *const BMLoginStateChangedNotificationKey = @"LoginStateChangedNotificationKey";
+
 @interface AppDelegate ()
+
+@property (nonatomic, strong) BMTabbarController *tabbarController;
 
 @end
 
@@ -18,11 +25,74 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    [AppDelegate registerSchemaRouter];
+    
+    [AppDelegate registerNavgationRouter];
+    
+    [AppDelegate configScrollViewAdapt4IOS11];
+
+    [self setUpRootController];
     
     return YES;
 }
+- (void)setUpRootController {
+    
+    self.window = [[UIWindow alloc]initWithFrame:UIScreen.mainScreen.bounds];
+    
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:BMLoginStateChangedNotificationKey object:nil]
+     subscribeNext:^(NSNotification * _Nullable x) {
+         [self.window setRootViewController:self.tabbarController];
+     }];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:BMLoginStateChangedNotificationKey object:nil];
+    
+    [self.window makeKeyAndVisible];
 
+}
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+    
+    // 默认的路由 跳转等等
+    if ([[url scheme] isEqualToString:BMDefaultRouteSchema]) {
+        
+        return [[JLRoutes globalRoutes] routeURL:url];
+    }
+    // http
+    else if ([[url scheme] isEqualToString:BMHTTPRouteSchema])
+    {
+        return [[JLRoutes routesForScheme:BMHTTPRouteSchema] routeURL:url];
+    }
+    // https
+    else if ([[url scheme] isEqualToString:BMHTTPsRouteSchema])
+    {
+        return [[JLRoutes routesForScheme:BMHTTPsRouteSchema] routeURL:url];
+    }
+    // Web交互请求
+    else if ([[url scheme] isEqualToString:BMWebHandlerRouteSchema])
+    {
+        return [[JLRoutes routesForScheme:BMWebHandlerRouteSchema] routeURL:url];
+    }
+    // 请求回调
+    else if ([[url scheme] isEqualToString:BMComponentsCallBackHandlerRouteSchema])
+    {
+        return [[JLRoutes routesForScheme:BMComponentsCallBackHandlerRouteSchema] routeURL:url];
+    }
+    // 未知请求
+    else if ([[url scheme] isEqualToString:BMUnknownHandlerRouteSchema])
+    {
+        return [[JLRoutes routesForScheme:BMUnknownHandlerRouteSchema] routeURL:url];
+    }
+    return NO;
+}
 
+#pragma mark - Getter
+-(BMTabbarController *)tabbarController{
+    if (!_tabbarController) {
+        _tabbarController = [[BMTabbarController alloc]init];
+    }
+    return _tabbarController;
+}
 
 @end
