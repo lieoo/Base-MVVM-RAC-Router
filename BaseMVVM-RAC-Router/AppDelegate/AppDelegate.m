@@ -11,6 +11,7 @@
 #import "AppDelegate+AdapterForIOS11.h"
 #import "AppDelegate+RegisRouter.h"
 #import "AppDelegate+AppUrlConfig.h"
+#import "AppDelegate+AspectsHotfix.h"
 #import "BMTabbarController.h"
 
 NSString *const BMLoginStateChangedNotificationKey = @"LoginStateChangedNotificationKey";
@@ -26,6 +27,9 @@ NSString *const BMLoginStateChangedNotificationKey = @"LoginStateChangedNotifica
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+#pragma mark -- HotFix 此方法有被拒风险 请酌情考虑 
+    [AppDelegate repair];
+    
     [AppDelegate registerSchemaRouter];
     
     [AppDelegate registerNavgationRouter];
@@ -45,6 +49,7 @@ NSString *const BMLoginStateChangedNotificationKey = @"LoginStateChangedNotifica
          [self.window setRootViewController:self.tabbarController];
      }];
     
+    //直接发送通知
     [[NSNotificationCenter defaultCenter] postNotificationName:BMLoginStateChangedNotificationKey object:nil];
     
     [self.window makeKeyAndVisible];

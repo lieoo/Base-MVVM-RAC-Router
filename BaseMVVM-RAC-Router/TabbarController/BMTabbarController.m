@@ -29,8 +29,13 @@
     NSArray *childItemsArray = @[
                                  @{kClassKey  : @"BMHomeViewController",
                                    kTitleKey  : @"首页",
-                                   kImgKey    : @"login_show_pwd",
-                                   kSelImgKey : @"login_hide_pwd"}
+                                   kImgKey    : @"tab_icon_0",
+                                   kSelImgKey : @"tab_icon_0_s"},
+                                 
+                                 @{kClassKey  : @"BMHomeViewController",
+                                   kTitleKey  : @"发现",
+                                   kImgKey    : @"tab_icon_1",
+                                   kSelImgKey : @"tab_icon_1_s"},
                                  ];
     
     [childItemsArray enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL *stop) {
@@ -44,14 +49,14 @@
         
         item.selectedImage = [[UIImage imageNamed:dict[kSelImgKey]]
                               imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        [item setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
-        [item setTitleTextAttributes:@{ NSForegroundColorAttributeName:[UIColor blueColor]} forState:UIControlStateSelected];
+        [item setTitleTextAttributes:@{NSForegroundColorAttributeName:RGB(101, 101, 101)} forState:UIControlStateNormal];
+        [item setTitleTextAttributes:@{ NSForegroundColorAttributeName:RGB(29, 144, 214)} forState:UIControlStateSelected];
         [self addChildViewController:nav];
     }];
     
     //去除 1px 分割线
-    self.tabBar.backgroundImage = [[UIImage alloc]init];
-    self.tabBar.shadowImage = [[UIImage alloc]init];
+//    self.tabBar.backgroundImage = [[UIImage alloc]init];
+//    self.tabBar.shadowImage = [[UIImage alloc]init];
 }
 
 @end

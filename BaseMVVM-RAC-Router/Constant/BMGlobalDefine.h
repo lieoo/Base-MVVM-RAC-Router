@@ -43,16 +43,8 @@
 #define IOS3_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"3.0" options:NSNumericSearch] != NSOrderedAscending )
 
 
-
-//#pragma clang diagnostic push
-//
-//#pragma clang diagnostic ignored "Null passed to a callee that requires a non-null argument"
-//
-//#pragma clang diagnostic ignored "Format String Issue Group"
-//
-//#pragma clang diagnostic pop
-//
-//#pragma clang diagnostic ignored "Null passed to a callee that requires a non-null argument"
-
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1)
+#define RGB3(v) RGB(v,v,v)
 
 #endif /* BMGlobalDefine_h */

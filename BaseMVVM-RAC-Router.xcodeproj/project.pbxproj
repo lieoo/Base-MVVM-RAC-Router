@@ -21,6 +21,26 @@
 		B337C95E2143CC8A00E854F3 /* BMLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C95D2143CC8A00E854F3 /* BMLoginViewModel.m */; };
 		B337C9612143CDC600E854F3 /* AppDelegate+AppUrlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9602143CDC600E854F3 /* AppDelegate+AppUrlConfig.m */; };
 		B337C9642143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m in Sources */ = {isa = PBXBuildFile; fileRef = B337C9632143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m */; };
+		B352810E216700CE009CD6AC /* AppDelegate+AspectsHotfix.m in Sources */ = {isa = PBXBuildFile; fileRef = B352810D216700CE009CD6AC /* AppDelegate+AspectsHotfix.m */; };
+		B3528119216710CC009CD6AC /* LYFix.m in Sources */ = {isa = PBXBuildFile; fileRef = B3528118216710CC009CD6AC /* LYFix.m */; };
+		B352812C2167114B009CD6AC /* instanceMethodCrash.js in Resources */ = {isa = PBXBuildFile; fileRef = B352811E2167114B009CD6AC /* instanceMethodCrash.js */; };
+		B352812D2167114B009CD6AC /* runInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = B352811F2167114B009CD6AC /* runInstanceMethod.js */; };
+		B352812E2167114B009CD6AC /* runBeforeClassMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = B35281202167114B009CD6AC /* runBeforeClassMethod.js */; };
+		B352812F2167114B009CD6AC /* runClassMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = B35281212167114B009CD6AC /* runClassMethod.js */; };
+		B35281302167114B009CD6AC /* runAfterInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = B35281222167114B009CD6AC /* runAfterInstanceMethod.js */; };
+		B35281312167114B009CD6AC /* changeReturnValue.js in Resources */ = {isa = PBXBuildFile; fileRef = B35281232167114B009CD6AC /* changeReturnValue.js */; };
+		B35281322167114B009CD6AC /* runBeforeInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = B35281242167114B009CD6AC /* runBeforeInstanceMethod.js */; };
+		B35281332167114B009CD6AC /* calssMethodCrash.js in Resources */ = {isa = PBXBuildFile; fileRef = B35281252167114B009CD6AC /* calssMethodCrash.js */; };
+		B35281342167114B009CD6AC /* changePrames.js in Resources */ = {isa = PBXBuildFile; fileRef = B35281262167114B009CD6AC /* changePrames.js */; };
+		B35281352167114B009CD6AC /* runInsteadInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = B35281272167114B009CD6AC /* runInsteadInstanceMethod.js */; };
+		B35281362167114B009CD6AC /* runWithInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = B35281282167114B009CD6AC /* runWithInstanceMethod.js */; };
+		B35281372167114B009CD6AC /* runInsteadClassMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = B35281292167114B009CD6AC /* runInsteadClassMethod.js */; };
+		B35281382167114B009CD6AC /* runWithParams.js in Resources */ = {isa = PBXBuildFile; fileRef = B352812A2167114B009CD6AC /* runWithParams.js */; };
+		B35281392167114B009CD6AC /* runAfterClassMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = B352812B2167114B009CD6AC /* runAfterClassMethod.js */; };
+		B352813C21671924009CD6AC /* NSInvocation+LYAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = B352813B21671924009CD6AC /* NSInvocation+LYAddtion.m */; };
+		B352814721673E9D009CD6AC /* BMDiscoverViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B352814621673E9D009CD6AC /* BMDiscoverViewModel.m */; };
+		B352814B21673EC9009CD6AC /* BMDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B352814921673EC9009CD6AC /* BMDiscoverViewController.m */; };
+		B352814C21673EC9009CD6AC /* BMDiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B352814A21673EC9009CD6AC /* BMDiscoverViewController.xib */; };
 		B35A2E73215CC09800534779 /* BMRouterConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E72215CC09800534779 /* BMRouterConstant.m */; };
 		B35A2E7C215CD49300534779 /* BMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E7B215CD49300534779 /* BMHomeViewModel.m */; };
 		B35A2E83215CD4C100534779 /* BMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E81215CD4C100534779 /* BMHomeViewController.m */; };
@@ -58,6 +78,31 @@
 		B337C9622143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AdapterForIOS11.h"; sourceTree = "<group>"; };
 		B337C9632143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AdapterForIOS11.m"; sourceTree = "<group>"; };
 		B337C9682143CF4100E854F3 /* BMGlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMGlobalDefine.h; sourceTree = "<group>"; };
+		B352810C216700CE009CD6AC /* AppDelegate+AspectsHotfix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AspectsHotfix.h"; sourceTree = "<group>"; };
+		B352810D216700CE009CD6AC /* AppDelegate+AspectsHotfix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AspectsHotfix.m"; sourceTree = "<group>"; };
+		B3528117216710CC009CD6AC /* LYFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFix.h; sourceTree = "<group>"; };
+		B3528118216710CC009CD6AC /* LYFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFix.m; sourceTree = "<group>"; };
+		B352811E2167114B009CD6AC /* instanceMethodCrash.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = instanceMethodCrash.js; sourceTree = "<group>"; };
+		B352811F2167114B009CD6AC /* runInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runInstanceMethod.js; sourceTree = "<group>"; };
+		B35281202167114B009CD6AC /* runBeforeClassMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runBeforeClassMethod.js; sourceTree = "<group>"; };
+		B35281212167114B009CD6AC /* runClassMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runClassMethod.js; sourceTree = "<group>"; };
+		B35281222167114B009CD6AC /* runAfterInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runAfterInstanceMethod.js; sourceTree = "<group>"; };
+		B35281232167114B009CD6AC /* changeReturnValue.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = changeReturnValue.js; sourceTree = "<group>"; };
+		B35281242167114B009CD6AC /* runBeforeInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runBeforeInstanceMethod.js; sourceTree = "<group>"; };
+		B35281252167114B009CD6AC /* calssMethodCrash.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = calssMethodCrash.js; sourceTree = "<group>"; };
+		B35281262167114B009CD6AC /* changePrames.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = changePrames.js; sourceTree = "<group>"; };
+		B35281272167114B009CD6AC /* runInsteadInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runInsteadInstanceMethod.js; sourceTree = "<group>"; };
+		B35281282167114B009CD6AC /* runWithInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runWithInstanceMethod.js; sourceTree = "<group>"; };
+		B35281292167114B009CD6AC /* runInsteadClassMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runInsteadClassMethod.js; sourceTree = "<group>"; };
+		B352812A2167114B009CD6AC /* runWithParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runWithParams.js; sourceTree = "<group>"; };
+		B352812B2167114B009CD6AC /* runAfterClassMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runAfterClassMethod.js; sourceTree = "<group>"; };
+		B352813A21671924009CD6AC /* NSInvocation+LYAddtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+LYAddtion.h"; sourceTree = "<group>"; };
+		B352813B21671924009CD6AC /* NSInvocation+LYAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+LYAddtion.m"; sourceTree = "<group>"; };
+		B352814521673E9D009CD6AC /* BMDiscoverViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMDiscoverViewModel.h; sourceTree = "<group>"; };
+		B352814621673E9D009CD6AC /* BMDiscoverViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMDiscoverViewModel.m; sourceTree = "<group>"; };
+		B352814821673EC9009CD6AC /* BMDiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMDiscoverViewController.h; sourceTree = "<group>"; };
+		B352814921673EC9009CD6AC /* BMDiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMDiscoverViewController.m; sourceTree = "<group>"; };
+		B352814A21673EC9009CD6AC /* BMDiscoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMDiscoverViewController.xib; sourceTree = "<group>"; };
 		B35A2E72215CC09800534779 /* BMRouterConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMRouterConstant.m; sourceTree = "<group>"; };
 		B35A2E74215CC0A800534779 /* BMRouterConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMRouterConstant.h; sourceTree = "<group>"; };
 		B35A2E79215CCE3D00534779 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
@@ -141,10 +186,12 @@
 		B337C9232143BCFB00E854F3 /* BaseMVVM-RAC-Router */ = {
 			isa = PBXGroup;
 			children = (
-				B337C9522143CC3E00E854F3 /* Me */,
 				B337C9492143C9E100E854F3 /* Home */,
+				B352813D21673E41009CD6AC /* Discover */,
+				B337C9522143CC3E00E854F3 /* Me */,
 				B337C9412143C18B00E854F3 /* TabbarController */,
 				B337C9402143C13D00E854F3 /* AppDelegate */,
+				B35281102167033D009CD6AC /* HotFix */,
 				B337C9272143BCFB00E854F3 /* ViewController.h */,
 				B337C9282143BCFB00E854F3 /* ViewController.m */,
 				B35A2E86215DBAB900534779 /* NSObject+NonBase.h */,
@@ -190,10 +237,10 @@
 		B337C9492143C9E100E854F3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B337C94F2143CC1400E854F3 /* ViewModel */,
 				B337C9512143CC1400E854F3 /* Controller */,
-				B337C94E2143CC1400E854F3 /* Model */,
+				B337C94F2143CC1400E854F3 /* ViewModel */,
 				B337C9502143CC1400E854F3 /* View */,
+				B337C94E2143CC1400E854F3 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -234,10 +281,10 @@
 		B337C9522143CC3E00E854F3 /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				B337C9532143CC3E00E854F3 /* ViewModel */,
 				B337C9542143CC3E00E854F3 /* Controller */,
-				B337C9552143CC3E00E854F3 /* Model */,
+				B337C9532143CC3E00E854F3 /* ViewModel */,
 				B337C9562143CC3E00E854F3 /* View */,
+				B337C9552143CC3E00E854F3 /* Model */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -293,6 +340,86 @@
 				B332EDDC2164A9FB009AD9AB /* JLRoutes+GenerateURLSupport.m */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		B35281102167033D009CD6AC /* HotFix */ = {
+			isa = PBXGroup;
+			children = (
+				B352811D2167114B009CD6AC /* FixJSDemo */,
+				B3528117216710CC009CD6AC /* LYFix.h */,
+				B3528118216710CC009CD6AC /* LYFix.m */,
+				B352813A21671924009CD6AC /* NSInvocation+LYAddtion.h */,
+				B352813B21671924009CD6AC /* NSInvocation+LYAddtion.m */,
+				B352810C216700CE009CD6AC /* AppDelegate+AspectsHotfix.h */,
+				B352810D216700CE009CD6AC /* AppDelegate+AspectsHotfix.m */,
+			);
+			name = HotFix;
+			path = "BaseMVVM-RAC-Router/HotFix";
+			sourceTree = SOURCE_ROOT;
+		};
+		B352811D2167114B009CD6AC /* FixJSDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B352811E2167114B009CD6AC /* instanceMethodCrash.js */,
+				B352811F2167114B009CD6AC /* runInstanceMethod.js */,
+				B35281202167114B009CD6AC /* runBeforeClassMethod.js */,
+				B35281212167114B009CD6AC /* runClassMethod.js */,
+				B35281222167114B009CD6AC /* runAfterInstanceMethod.js */,
+				B35281232167114B009CD6AC /* changeReturnValue.js */,
+				B35281242167114B009CD6AC /* runBeforeInstanceMethod.js */,
+				B35281252167114B009CD6AC /* calssMethodCrash.js */,
+				B35281262167114B009CD6AC /* changePrames.js */,
+				B35281272167114B009CD6AC /* runInsteadInstanceMethod.js */,
+				B35281282167114B009CD6AC /* runWithInstanceMethod.js */,
+				B35281292167114B009CD6AC /* runInsteadClassMethod.js */,
+				B352812A2167114B009CD6AC /* runWithParams.js */,
+				B352812B2167114B009CD6AC /* runAfterClassMethod.js */,
+			);
+			path = FixJSDemo;
+			sourceTree = "<group>";
+		};
+		B352813D21673E41009CD6AC /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B352813E21673E6A009CD6AC /* Controller */,
+				B352813F21673E6A009CD6AC /* ViewModel */,
+				B352814121673E6A009CD6AC /* View */,
+				B352814021673E6A009CD6AC /* Model */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B352813E21673E6A009CD6AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B352814821673EC9009CD6AC /* BMDiscoverViewController.h */,
+				B352814921673EC9009CD6AC /* BMDiscoverViewController.m */,
+				B352814A21673EC9009CD6AC /* BMDiscoverViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B352813F21673E6A009CD6AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B352814521673E9D009CD6AC /* BMDiscoverViewModel.h */,
+				B352814621673E9D009CD6AC /* BMDiscoverViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B352814021673E6A009CD6AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B352814121673E6A009CD6AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,11 +482,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35281372167114B009CD6AC /* runInsteadClassMethod.js in Resources */,
 				B337C9312143BCFC00E854F3 /* LaunchScreen.storyboard in Resources */,
+				B352812E2167114B009CD6AC /* runBeforeClassMethod.js in Resources */,
 				B35A2E84215CD4C100534779 /* BMHomeViewController.xib in Resources */,
+				B35281322167114B009CD6AC /* runBeforeInstanceMethod.js in Resources */,
+				B35281342167114B009CD6AC /* changePrames.js in Resources */,
+				B35281382167114B009CD6AC /* runWithParams.js in Resources */,
+				B35281302167114B009CD6AC /* runAfterInstanceMethod.js in Resources */,
+				B352812C2167114B009CD6AC /* instanceMethodCrash.js in Resources */,
 				B337C95B2143CC5800E854F3 /* BMLoginViewController.xib in Resources */,
+				B352814C21673EC9009CD6AC /* BMDiscoverViewController.xib in Resources */,
 				B337C92E2143BCFC00E854F3 /* Assets.xcassets in Resources */,
+				B352812F2167114B009CD6AC /* runClassMethod.js in Resources */,
+				B35281362167114B009CD6AC /* runWithInstanceMethod.js in Resources */,
+				B35281352167114B009CD6AC /* runInsteadInstanceMethod.js in Resources */,
 				B337C92C2143BCFB00E854F3 /* Main.storyboard in Resources */,
+				B35281392167114B009CD6AC /* runAfterClassMethod.js in Resources */,
+				B35281332167114B009CD6AC /* calssMethodCrash.js in Resources */,
+				B35281312167114B009CD6AC /* changeReturnValue.js in Resources */,
+				B352812D2167114B009CD6AC /* runInstanceMethod.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,14 +569,19 @@
 			files = (
 				B337C9292143BCFB00E854F3 /* ViewController.m in Sources */,
 				B337C9342143BCFC00E854F3 /* main.m in Sources */,
+				B3528119216710CC009CD6AC /* LYFix.m in Sources */,
+				B352810E216700CE009CD6AC /* AppDelegate+AspectsHotfix.m in Sources */,
 				B35A2E83215CD4C100534779 /* BMHomeViewController.m in Sources */,
 				B35A2E8B215DBC2F00534779 /* UIViewController+NonBase.m in Sources */,
 				B35A2E88215DBAB900534779 /* NSObject+NonBase.m in Sources */,
 				B332EDDD2164A9FB009AD9AB /* JLRoutes+GenerateURLSupport.m in Sources */,
 				B337C9262143BCFB00E854F3 /* AppDelegate.m in Sources */,
 				B337C9442143C1D800E854F3 /* BMTabbarController.m in Sources */,
+				B352814721673E9D009CD6AC /* BMDiscoverViewModel.m in Sources */,
 				B35A2E73215CC09800534779 /* BMRouterConstant.m in Sources */,
+				B352813C21671924009CD6AC /* NSInvocation+LYAddtion.m in Sources */,
 				B332EDDA2164A8B9009AD9AB /* AppDelegate+RegisRouter.m in Sources */,
+				B352814B21673EC9009CD6AC /* BMDiscoverViewController.m in Sources */,
 				B337C95E2143CC8A00E854F3 /* BMLoginViewModel.m in Sources */,
 				B337C9612143CDC600E854F3 /* AppDelegate+AppUrlConfig.m in Sources */,
 				B337C9642143CEAF00E854F3 /* AppDelegate+AdapterForIOS11.m in Sources */,
