@@ -20,6 +20,8 @@
 // 全局定义
 
 #import "BMGlobalDefine.h"
+#import "BMFuncationDefine.h"
+
 // 响应式框架
 #import "ReactiveObjC.h"
 // 自动布局框架

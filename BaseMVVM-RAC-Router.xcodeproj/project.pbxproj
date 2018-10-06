@@ -51,6 +51,7 @@
 		B3528165216765AE009CD6AC /* BMLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B3528164216765AE009CD6AC /* BMLoginButton.m */; };
 		B3528169216766E4009CD6AC /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B3528168216766E4009CD6AC /* UIColor+Tools.m */; };
 		B352816C216767E0009CD6AC /* UIImage+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B352816B216767E0009CD6AC /* UIImage+Tools.m */; };
+		B352816F2168A71D009CD6AC /* BMFuncationDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = B352816E2168A71D009CD6AC /* BMFuncationDefine.m */; };
 		B35A2E73215CC09800534779 /* BMRouterConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E72215CC09800534779 /* BMRouterConstant.m */; };
 		B35A2E7C215CD49300534779 /* BMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E7B215CD49300534779 /* BMHomeViewModel.m */; };
 		B35A2E83215CD4C100534779 /* BMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E81215CD4C100534779 /* BMHomeViewController.m */; };
@@ -132,6 +133,8 @@
 		B3528168216766E4009CD6AC /* UIColor+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
 		B352816A216767E0009CD6AC /* UIImage+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tools.h"; sourceTree = "<group>"; };
 		B352816B216767E0009CD6AC /* UIImage+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tools.m"; sourceTree = "<group>"; };
+		B352816D2168A4F7009CD6AC /* BMFuncationDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMFuncationDefine.h; sourceTree = "<group>"; };
+		B352816E2168A71D009CD6AC /* BMFuncationDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMFuncationDefine.m; sourceTree = "<group>"; };
 		B35A2E72215CC09800534779 /* BMRouterConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMRouterConstant.m; sourceTree = "<group>"; };
 		B35A2E74215CC0A800534779 /* BMRouterConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMRouterConstant.h; sourceTree = "<group>"; };
 		B35A2E79215CCE3D00534779 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
@@ -366,6 +369,8 @@
 			children = (
 				B337C9682143CF4100E854F3 /* BMGlobalDefine.h */,
 				B35A2E79215CCE3D00534779 /* PrefixHeader.h */,
+				B352816D2168A4F7009CD6AC /* BMFuncationDefine.h */,
+				B352816E2168A71D009CD6AC /* BMFuncationDefine.m */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -634,6 +639,7 @@
 				B3528165216765AE009CD6AC /* BMLoginButton.m in Sources */,
 				B337C9292143BCFB00E854F3 /* ViewController.m in Sources */,
 				B337C9342143BCFC00E854F3 /* main.m in Sources */,
+				B352816F2168A71D009CD6AC /* BMFuncationDefine.m in Sources */,
 				B3528119216710CC009CD6AC /* LYFix.m in Sources */,
 				B352815921675844009CD6AC /* BMLoginAccountInputCell.m in Sources */,
 				B352810E216700CE009CD6AC /* AppDelegate+AspectsHotfix.m in Sources */,
