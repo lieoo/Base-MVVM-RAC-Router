@@ -24,12 +24,12 @@ static const void *kViewModelKey = &kViewModelKey;
     return objc_getAssociatedObject(self, kParamsKey);
 }
 
-- (void)setViewModel:(id<BMViewControllerProtocol>)viewModel
+- (void)setViewModel:(id<BMControllMVVMProtocol>)viewModel
 {
     objc_setAssociatedObject(self, kViewModelKey, viewModel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (id<BMViewControllerProtocol>)viewModel
+- (id<BMControllMVVMProtocol>)viewModel
 {
     return objc_getAssociatedObject(self, kViewModelKey);
 }

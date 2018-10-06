@@ -11,8 +11,8 @@ target 'BaseMVVM-RAC-Router' do
   pod 'SVProgressHUD', '~> 2.2.2'
   
   # AOP面向切面
-  pod 'Aspects'
-  
+  pod 'Aspects', '~> 1.4.1'
+
   # 响应函数式框架
   pod 'ReactiveObjC', '~> 3.0.0' 
   

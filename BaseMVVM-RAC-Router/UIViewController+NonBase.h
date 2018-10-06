@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BMViewControllerProtocol.h"
+#import "BMControllMVVMProtocol.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (NonBase)
@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  ViewModel 属性
  */
-@property (nonatomic, strong) id <BMViewControllerProtocol> viewModel;
+@property (nonatomic, strong) id <BMControllMVVMProtocol> viewModel;
 
 #pragma mark - 通用类
 

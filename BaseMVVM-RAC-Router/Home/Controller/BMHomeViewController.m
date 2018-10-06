@@ -23,7 +23,7 @@
     
     [[self.pushBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
         NSLog(@"111");
-//        [self.navigationController presentViewController:[BMLoginViewController new] animated:YES completion:nil];
+
         NSString *router = [JLRoutes bm_generateURLWithPattern:BMNavPresentRoute parameters:@[NSStringFromClass(BMLoginViewController.class)]];
         
         [[RACScheduler mainThreadScheduler] schedule:^{
@@ -38,14 +38,23 @@
     }];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)bm_initialDefaultsForController {
+//    [self setViewModel:[[bmLoginViewModel alloc] initWithParams:self.params]];
+    
 }
-*/
+
+- (void)bm_configNavigationForController {
+    
+}
+
+
+
+- (void)bm_createViewForConctroller {
+    
+}
+
+- (void)bm_bindViewModelForController {
+
+}
 
 @end

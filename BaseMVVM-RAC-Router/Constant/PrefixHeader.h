@@ -35,7 +35,7 @@
 //#import "FKViewProtocol.h"
 //#import "FKViewModelProtocol.h"
 //#import "FKViewControllerProtocol.h"
-#import "BMViewControllerProtocol.h"
+#import "BMControllMVVMProtocol.h"
 #import "NSObject+NonBase.h"
 #import "UIViewController+NonBase.h"
 
@@ -43,8 +43,8 @@
 //#import "UIView+NonBase.h"
 //#import "NSObject+NonBase.h"
 //#import "UIViewController+NonBase.h"
-//#import "UIColor+FKColor.h"
-//#import "UIImage+FKColor.h"
+#import "UIColor+Tools.h"
+#import "UIImage+Tools.h"
 
 #endif
 

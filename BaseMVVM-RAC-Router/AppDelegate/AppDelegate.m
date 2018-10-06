@@ -13,12 +13,14 @@
 #import "AppDelegate+AppUrlConfig.h"
 #import "AppDelegate+AspectsHotfix.h"
 #import "BMTabbarController.h"
+#import "BMLoginViewController.h"
 
 NSString *const BMLoginStateChangedNotificationKey = @"LoginStateChangedNotificationKey";
 
 @interface AppDelegate ()
 
 @property (nonatomic, strong) BMTabbarController *tabbarController;
+@property (nonatomic, strong) BMLoginViewController *loginController;
 
 @end
 
@@ -46,7 +48,17 @@ NSString *const BMLoginStateChangedNotificationKey = @"LoginStateChangedNotifica
     
     [[[NSNotificationCenter defaultCenter] rac_addObserverForName:BMLoginStateChangedNotificationKey object:nil]
      subscribeNext:^(NSNotification * _Nullable x) {
-         [self.window setRootViewController:self.tabbarController];
+         NSNumber * number = [[NSUserDefaults standardUserDefaults] objectForKey:@"isLogin"];
+         BOOL isLogin = NO;
+         if (number) {
+             isLogin = number.boolValue;
+         }
+         if (isLogin) {//已登录
+             [self.window setRootViewController:self.tabbarController];
+         }else//未登录
+         {
+             [self.window setRootViewController:self.loginController];
+         }
      }];
     
     //直接发送通知
@@ -98,6 +110,14 @@ NSString *const BMLoginStateChangedNotificationKey = @"LoginStateChangedNotifica
         _tabbarController = [[BMTabbarController alloc]init];
     }
     return _tabbarController;
+}
+
+- (BMLoginViewController *)loginController
+{
+    if (!_loginController) {
+        _loginController = [[BMLoginViewController alloc] init];
+    }
+    return _loginController;
 }
 
 @end

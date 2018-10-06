@@ -7,9 +7,25 @@
 //
 
 #import "BMLoginViewController.h"
+#import "AppDelegate.h"
+#import "BMLoginAccountInputCell.h"
+#import "BMKLoginPwdInputCell.h"
+#import "BMLoginViewModel.h"
+#import "BMLoginInputFootView.h"
 
-@interface BMLoginViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *dismissBtn;
+typedef NS_ENUM(NSInteger, kLoginInputType) {
+    kLoginInputType_account = 0,
+    kLoginInputType_password = 1
+};
+
+
+@interface BMLoginViewController () 
+
+@property (weak, nonatomic) IBOutlet UITableView *LoginTableView;
+@property (strong, nonatomic) IBOutlet UIView *tableviewHeaderView;
+
+@property (nonatomic,strong) BMLoginViewModel *viewModel;
+@property (nonatomic,strong) BMLoginInputFootView *tableFooterView;
 
 @end
 
@@ -17,26 +33,91 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    [[self.dismissBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }];
+    
+    [self initialDefaultsForController];
+    
+    [self createViewForConctroller];
+    
+    [self configNavigationForController];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initialDefaultsForController {
+
+    [self setViewModel:[[BMLoginViewModel alloc] initWithParams:self.params]];
+
+}
+
+- (void)configNavigationForController {
+    
 }
 
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)createViewForConctroller {
+    // 注册cell
+    [self.LoginTableView registerNib:[UINib nibWithNibName:NSStringFromClass(BMLoginAccountInputCell.class) bundle:nil] forCellReuseIdentifier:NSStringFromClass(BMLoginAccountInputCell.class)];
+    [self.LoginTableView registerNib:[UINib nibWithNibName:NSStringFromClass(BMKLoginPwdInputCell.class) bundle:nil] forCellReuseIdentifier:NSStringFromClass(BMKLoginPwdInputCell.class)];
+    
+    // tableHeaderView
+    self.LoginTableView.tableHeaderView = self.tableviewHeaderView;
+    self.tableviewHeaderView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/3);
+    
+    self.LoginTableView.tableFooterView = self.tableFooterView;
+    
 }
-*/
+
+- (void)bm_bindViewModelForController {
+    
+    
+}
+#pragma mark - UITableViewDelegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.viewModel.cellTitleArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case kLoginInputType_account:
+        {
+            // 账户
+            BMLoginAccountInputCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(BMLoginAccountInputCell.class)];
+            
+            [cell bindViewModel:self.viewModel withParams:nil];
+            
+            return cell;
+        }
+            break;
+        case kLoginInputType_password:
+        {
+            // 密码
+            BMKLoginPwdInputCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(BMKLoginPwdInputCell.class)];
+            
+            [cell bindViewModel:self.viewModel withParams:nil];
+            
+            return cell;
+        }
+            break;
+        default:
+            break;
+    }
+    return [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"blankCell"];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 65;
+}
+
+#pragma mark - Getter
+- (BMLoginInputFootView *)tableFooterView
+{
+    if (!_tableFooterView){
+        _tableFooterView = [[BMLoginInputFootView alloc] init];
+        _tableFooterView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 110);
+    }
+    return _tableFooterView;
+}
+
 
 @end

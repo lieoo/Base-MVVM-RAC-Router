@@ -1,8 +1,8 @@
 //
-//  BMHomeViewController.h
+//  UIImage+Tools.h
 //  BaseMVVM-RAC-Router
 //
-//  Created by Leo on 2018/9/27.
+//  Created by Leo on 2018/10/5.
 //  Copyright © 2018 leios. All rights reserved.
 //
 
@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BMHomeViewController : UIViewController 
+@interface UIImage (Tools)
+
++ (UIImage*) imageWithColor: (UIColor*) color;
 
 @end
 
