@@ -7,6 +7,7 @@
 //
 
 #import "BMLoginViewModel.h"
+#import "BMAPILoginRequest.h"
 
 @implementation BMLoginViewModel
 
@@ -42,51 +43,52 @@
 - (RACCommand *)loginCommand
 {
     if (!_loginCommand) {
+        
         @weakify(self);
-//        _loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
-//            @strongify(self);
-//            NSLog(@"111");
-////            FKLoginRequest *loginRequest = [[FKLoginRequest alloc] initWithUsr:self.userAccount pwd:self.password];
-////            // 数据返回值reformat代理
-////            // loginRequest.reformDelegate = self;
-////            // 数据请求响应代理 通过代理回调
-////            // loginRequest.delegate = self;
-//            return [[[loginRequest rac_requestSignal] doNext:^(id  _Nullable x) {
-////
-////
-////                // 解析数据
-////                [[NSUserDefaults standardUserDefaults] setObject:@(YES) forKey:@"isLogin"];
-////
-//            }] materialize];
-//        }];
+        _loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+            @strongify(self);
+            NSLog(@"111");
+            BMAPILoginRequest *loginRequest = [[BMAPILoginRequest alloc]initWithUsr:self.userAccount pwd:self.password];
+             loginRequest.reformDelegate = self;
+//            // 数据请求响应代理 通过代理回调
+             loginRequest.delegate = self;
+            return [loginRequest.rac_requestSignal doNext:^(id  _Nullable x) {
+
+            }];
+        }];
+ 
+        [_loginCommand.executionSignals subscribeError:^(NSError * _Nullable error) {
+            NSLog(@"error!!");
+        }];
+        
     }
     return _loginCommand;
 }
 
-#pragma mark - FKBaseRequestFeformDelegate
-//- (id)request:(FKBaseRequest *)request reformJSONResponse:(id)jsonResponse
-//{
-//    if([request isKindOfClass:FKLoginRequest.class]){
-//        // 在这里对json数据进行重新格式化
-//        return @{
-//                 FKLoginAccessTokenKey : jsonResponse[@"token"],
-//                 // FKLoginAccessTokenKey : DecodeStringFromDic(jsonResponse, @"token"),
-//                 };
-//    }
-//    return jsonResponse;
-//}
-//
-//#pragma mark - YTKRequestDelegate
-//- (void)requestFinished:(__kindof YTKBaseRequest *)request
-//{
-//    // 解析数据
-//    [[NSUserDefaults standardUserDefaults] setObject:@(YES) forKey:@"isLogin"];
-//}
-//
-//- (void)requestFailed:(__kindof YTKBaseRequest *)request
-//{
-//    // do something
-//}
+#pragma mark - BMBaseRequestFeformDelegate
+- (id)request:(BMAPIBaseRequest *)request reformJSONResponse:(id)jsonResponse
+{
+    if([request isKindOfClass:BMAPILoginRequest.class]){
+        // 在这里对json数据进行重新格式化
+        return @{
+//                 BMLoginAccessTokenKey : jsonResponse[@"token"],
+                  BMLoginAccessTokenKey : DecodeStringFromDic(jsonResponse, @"token"),
+                 };
+    }
+    return jsonResponse;
+}
+
+#pragma mark - YTKRequestDelegate
+- (void)requestFinished:(__kindof YTKBaseRequest *)request{
+    NSLog(@"请求成功");
+    // 解析数据
+    [[NSUserDefaults standardUserDefaults] setObject:@(YES) forKey:@"isLogin"];
+}
+
+- (void)requestFailed:(__kindof YTKBaseRequest *)request
+{
+    NSLog(@"请求失败");
+}
 
 
 @end

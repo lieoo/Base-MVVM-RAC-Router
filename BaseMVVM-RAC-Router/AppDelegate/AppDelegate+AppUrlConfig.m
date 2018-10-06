@@ -14,9 +14,9 @@
 @implementation AppDelegate (AppUrlConfig)
 
 - (void)configNetWrokApiEnv{
-    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
-    config.baseUrl = HOST_URL;
-    config.cdnUrl = CDN_URL;
+//    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
+//    config.baseUrl = HOST_URL;
+//    config.cdnUrl = CDN_URL;
 }
 
 @end

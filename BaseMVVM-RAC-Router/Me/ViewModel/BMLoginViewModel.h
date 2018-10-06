@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface BMLoginViewModel : NSObject
+#import "BMAPIBaseRequest.h"
+@interface BMLoginViewModel : NSObject <BMBaseRequestFeformDelegate,YTKRequestDelegate>
 
 #pragma mark - 业务数据
 

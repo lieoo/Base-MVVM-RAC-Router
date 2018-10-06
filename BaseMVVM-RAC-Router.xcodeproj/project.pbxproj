@@ -52,6 +52,8 @@
 		B3528169216766E4009CD6AC /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B3528168216766E4009CD6AC /* UIColor+Tools.m */; };
 		B352816C216767E0009CD6AC /* UIImage+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B352816B216767E0009CD6AC /* UIImage+Tools.m */; };
 		B352816F2168A71D009CD6AC /* BMFuncationDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = B352816E2168A71D009CD6AC /* BMFuncationDefine.m */; };
+		B35281762168AB44009CD6AC /* BMAPIBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B35281752168AB44009CD6AC /* BMAPIBaseRequest.m */; };
+		B35281792168AE46009CD6AC /* BMAPILoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B35281782168AE46009CD6AC /* BMAPILoginRequest.m */; };
 		B35A2E73215CC09800534779 /* BMRouterConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E72215CC09800534779 /* BMRouterConstant.m */; };
 		B35A2E7C215CD49300534779 /* BMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E7B215CD49300534779 /* BMHomeViewModel.m */; };
 		B35A2E83215CD4C100534779 /* BMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A2E81215CD4C100534779 /* BMHomeViewController.m */; };
@@ -135,6 +137,10 @@
 		B352816B216767E0009CD6AC /* UIImage+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tools.m"; sourceTree = "<group>"; };
 		B352816D2168A4F7009CD6AC /* BMFuncationDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMFuncationDefine.h; sourceTree = "<group>"; };
 		B352816E2168A71D009CD6AC /* BMFuncationDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMFuncationDefine.m; sourceTree = "<group>"; };
+		B35281742168AB44009CD6AC /* BMAPIBaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMAPIBaseRequest.h; sourceTree = "<group>"; };
+		B35281752168AB44009CD6AC /* BMAPIBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMAPIBaseRequest.m; sourceTree = "<group>"; };
+		B35281772168AE46009CD6AC /* BMAPILoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMAPILoginRequest.h; sourceTree = "<group>"; };
+		B35281782168AE46009CD6AC /* BMAPILoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMAPILoginRequest.m; sourceTree = "<group>"; };
 		B35A2E72215CC09800534779 /* BMRouterConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMRouterConstant.m; sourceTree = "<group>"; };
 		B35A2E74215CC0A800534779 /* BMRouterConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMRouterConstant.h; sourceTree = "<group>"; };
 		B35A2E79215CCE3D00534779 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
@@ -313,6 +319,7 @@
 		B337C9522143CC3E00E854F3 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				B35281702168AA07009CD6AC /* APIRequest */,
 				B337C9542143CC3E00E854F3 /* Controller */,
 				B337C9532143CC3E00E854F3 /* ViewModel */,
 				B337C9562143CC3E00E854F3 /* View */,
@@ -489,6 +496,17 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		B35281702168AA07009CD6AC /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				B35281742168AB44009CD6AC /* BMAPIBaseRequest.h */,
+				B35281752168AB44009CD6AC /* BMAPIBaseRequest.m */,
+				B35281772168AE46009CD6AC /* BMAPILoginRequest.h */,
+				B35281782168AE46009CD6AC /* BMAPILoginRequest.m */,
+			);
+			path = APIRequest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -637,6 +655,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3528165216765AE009CD6AC /* BMLoginButton.m in Sources */,
+				B35281792168AE46009CD6AC /* BMAPILoginRequest.m in Sources */,
 				B337C9292143BCFB00E854F3 /* ViewController.m in Sources */,
 				B337C9342143BCFC00E854F3 /* main.m in Sources */,
 				B352816F2168A71D009CD6AC /* BMFuncationDefine.m in Sources */,
@@ -645,6 +664,7 @@
 				B352810E216700CE009CD6AC /* AppDelegate+AspectsHotfix.m in Sources */,
 				B35A2E83215CD4C100534779 /* BMHomeViewController.m in Sources */,
 				B352815021674688009CD6AC /* BMBaseViewController.m in Sources */,
+				B35281762168AB44009CD6AC /* BMAPIBaseRequest.m in Sources */,
 				B35A2E8B215DBC2F00534779 /* UIViewController+NonBase.m in Sources */,
 				B35A2E88215DBAB900534779 /* NSObject+NonBase.m in Sources */,
 				B332EDDD2164A9FB009AD9AB /* JLRoutes+GenerateURLSupport.m in Sources */,

@@ -66,8 +66,8 @@
             
             @strongify(self);
             // 限制密码长度
-            if (account.length > 25) {
-                self.inputTextFiled.text = [account substringToIndex:25];
+            if (account.length > 8) {
+                self.inputTextFiled.text = [account substringToIndex:8];
             }
             return self.inputTextFiled.text;
         }];
