@@ -40,6 +40,7 @@
 #import "BMControllMVVMProtocol.h"
 #import "NSObject+NonBase.h"
 #import "UIViewController+NonBase.h"
+#import "BMBaseViewController.h"
 
 // Category
 //#import "UIView+NonBase.h"

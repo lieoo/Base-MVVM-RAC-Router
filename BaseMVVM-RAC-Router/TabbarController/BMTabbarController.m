@@ -43,10 +43,12 @@
     [childItemsArray enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL *stop) {
         BMBaseViewController *vc = [NSClassFromString(dict[kClassKey]) new];
         vc.title = dict[kTitleKey];
-//        vc.view.backgroundColor = [UIColor redColor];
+        vc.view.backgroundColor = [UIColor whiteColor];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-//        nav.navigationBar.tintColor = [UIColor blueColor];
-//        nav.navigationBar.backgroundColor = [UIColor blueColor];
+        nav.navigationBar.translucent = NO;
+        nav.navigationBar.backgroundColor = [UIColor whiteColor];
+        nav.navigationBar.barTintColor = [UIColor whiteColor];
+        
         UITabBarItem *item = nav.tabBarItem;
         item.title = dict[kTitleKey];
         item.image = [[UIImage imageNamed:dict[kImgKey]]
