@@ -14,6 +14,7 @@
 #import "AppDelegate+AspectsHotfix.h"
 #import "BMTabbarController.h"
 #import "BMLoginViewController.h"
+#import "AppDelegate+AppUrlConfig.h"
 
 NSString *const BMLoginStateChangedNotificationKey = @"LoginStateChangedNotificationKey";
 
@@ -38,6 +39,8 @@ NSString *const BMLoginStateChangedNotificationKey = @"LoginStateChangedNotifica
     
     [AppDelegate configScrollViewAdapt4IOS11];
 
+    [AppDelegate configNetWrokApiEnv];
+    
     [self setUpRootController];
     
     return YES;

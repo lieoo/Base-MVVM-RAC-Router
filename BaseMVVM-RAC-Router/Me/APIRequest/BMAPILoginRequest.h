@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /* 大多时候Api只需要一种解析格式，所以此处跟着request走，其他情况下常量字符串建议跟着reformer走， */
 // 登录token key
+
 FOUNDATION_EXTERN NSString *BMLoginAccessTokenKey;
 // 也可以写成 局部常量形式
 static const NSString *BMLoginAccessTokenKey2 = @"accessToken";

@@ -63,7 +63,7 @@
 	<string>1</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>FXXKBaseMVVM</string>
+		<string>RouteSchema</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>

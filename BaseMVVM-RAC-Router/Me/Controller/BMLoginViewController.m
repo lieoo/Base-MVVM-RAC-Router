@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
 };
 
 
-@interface BMLoginViewController () 
+@interface BMLoginViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *LoginTableView;
 @property (strong, nonatomic) IBOutlet UIView *tableviewHeaderView;
@@ -44,9 +44,9 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
 }
 
 - (void)initialDefaultsForController {
-
+    
     [self setViewModel:[[BMLoginViewModel alloc] initWithParams:self.params]];
-
+    
 }
 
 
@@ -74,24 +74,34 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
     @weakify(self);
     
     // 是否可以登录
+    
     RAC(self.tableFooterView.loginBtn, enabled) = RACObserve(self.viewModel, isLoginEnable);
     
     // 点击登录信号
-    [[[self.tableFooterView.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] throttle:1.0f] subscribeNext:^(__kindof UIControl * _Nullable x) {
+    
+    [[[self.tableFooterView.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside]throttle:0.2] subscribeNext:^(__kindof UIControl * _Nullable x) {
         @strongify(self);
         
         [self.viewModel.loginCommand execute:nil];
-        [self fk_hideKeyBoard];
+        [self hideKeyBoard];
+        
     }];
     
+    // 点击遇到问题按钮
+    
+    [[self.tableFooterView.queryBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+        NSLog(@"点击了登录遇到问题");
+    }];
+    
+    
+    
     // 监听登录信号是否在执行
-    [[self.viewModel.loginCommand.executing skip:1] subscribeNext:^(NSNumber * _Nullable x) {
+    [[self.viewModel.loginCommand.executing skip:0.2] subscribeNext:^(NSNumber * _Nullable x) {
         @strongify(self);
         
         if (x.boolValue) {
             [self.tableFooterView.loginBtn startLoadingAnimation];
-        }else
-        {
+        } else {
             // 2秒后移除提示框
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self.tableFooterView.loginBtn stopLoadingAnimation];
@@ -102,23 +112,14 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
     // 登录命令监听
     [self.viewModel.loginCommand.executionSignals subscribeNext:^(RACSignal* signal) {
         
-        [[signal dematerialize] subscribeNext:^(id  _Nullable x) {
+        [signal subscribeNext:^(id  _Nullable x) {
             
             BOOL isLogin = [[NSUserDefaults standardUserDefaults] objectForKey:@"isLogin"];
             if(isLogin){
-//                [SVProgressHUD fk_displaySuccessWithStatus:@"登录成功"];
-                
-                // 2s后进入首页
-//                [SVProgressHUD dismissWithDelay:2.0f completion:^{
-                    [[NSNotificationCenter defaultCenter] postNotificationName:BMLoginStateChangedNotificationKey object:nil];
-//                }];
-            }else
-            {
-//                [SVProgressHUD fk_displaySuccessWithStatus:@"登录失败"];
+                [[NSNotificationCenter defaultCenter] postNotificationName:BMLoginStateChangedNotificationKey object:nil];
+            }else{
+                NSLog(@"登录失败");
             }
-        } error:^(NSError * _Nullable error) {
-            
-//            [SVProgressHUD fk_displayErrorWithStatus:error.localizedDescription];
         }];
     }];
 }
@@ -136,7 +137,7 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
             // 账户
             BMLoginAccountInputCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(BMLoginAccountInputCell.class)];
             
-            [cell bindViewModel:self.viewModel withParams:nil];
+            [cell bindViewModel:self.viewModel withParams:@{}];
             
             return cell;
         }
@@ -146,7 +147,7 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
             // 密码
             BMKLoginPwdInputCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(BMKLoginPwdInputCell.class)];
             
-            [cell bindViewModel:self.viewModel withParams:nil];
+            [cell bindViewModel:self.viewModel withParams:@{}];
             
             return cell;
         }
@@ -154,7 +155,7 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
         default:
             break;
     }
-    return [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"blankCell"];
+    return [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"blankCell"];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -163,8 +164,7 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
 }
 
 #pragma mark - Getter
-- (BMLoginInputFootView *)tableFooterView
-{
+- (BMLoginInputFootView *)tableFooterView {
     if (!_tableFooterView){
         _tableFooterView = [[BMLoginInputFootView alloc] init];
         _tableFooterView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 110);
@@ -174,3 +174,5 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
 
 
 @end
+
+

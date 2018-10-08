@@ -40,54 +40,43 @@
 }
 
 #pragma mark - Getter
-- (RACCommand *)loginCommand
-{
+- (RACCommand *)loginCommand {
     if (!_loginCommand) {
         
         @weakify(self);
         _loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
             @strongify(self);
-            NSLog(@"111");
             BMAPILoginRequest *loginRequest = [[BMAPILoginRequest alloc]initWithUsr:self.userAccount pwd:self.password];
-             loginRequest.reformDelegate = self;
-//            // 数据请求响应代理 通过代理回调
-             loginRequest.delegate = self;
-            return [loginRequest.rac_requestSignal doNext:^(id  _Nullable x) {
+            
+            return [[[loginRequest.rac_requestSignal doNext:^(id  _Nullable x) {
+                // 解析数据
+                NSLog(@"%@",x);
+                
+                [[NSUserDefaults standardUserDefaults] setObject:@(YES) forKey:@"isLogin"];
+                
+            }] doError:^(NSError * _Nonnull error) {
 
-            }];
-        }];
- 
-        [_loginCommand.executionSignals subscribeError:^(NSError * _Nullable error) {
-            NSLog(@"error!!");
-        }];
+            }]materialize];
         
+        }];
     }
     return _loginCommand;
 }
 
 #pragma mark - BMBaseRequestFeformDelegate
-- (id)request:(BMAPIBaseRequest *)request reformJSONResponse:(id)jsonResponse
-{
+- (id)request:(BMAPIBaseRequest *)request reformJSONResponse:(id)jsonResponse {
+    
+    if (!jsonResponse) {
+        return @{};
+    }
     if([request isKindOfClass:BMAPILoginRequest.class]){
         // 在这里对json数据进行重新格式化
         return @{
 //                 BMLoginAccessTokenKey : jsonResponse[@"token"],
-                  BMLoginAccessTokenKey : DecodeStringFromDic(jsonResponse, @"token"),
+                  BMLoginAccessTokenKey : DecodeStringFromDic(jsonResponse, @"content"),
                  };
     }
     return jsonResponse;
-}
-
-#pragma mark - YTKRequestDelegate
-- (void)requestFinished:(__kindof YTKBaseRequest *)request{
-    NSLog(@"请求成功");
-    // 解析数据
-    [[NSUserDefaults standardUserDefaults] setObject:@(YES) forKey:@"isLogin"];
-}
-
-- (void)requestFailed:(__kindof YTKBaseRequest *)request
-{
-    NSLog(@"请求失败");
 }
 
 

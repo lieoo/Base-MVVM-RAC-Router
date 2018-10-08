@@ -38,7 +38,7 @@ static const void *kViewModelKey = &kViewModelKey;
 {
     [super touchesBegan:touches withEvent:event];
     // 点击隐藏键盘
-    [self fk_hideKeyBoard];
+    [self hideKeyBoard];
 }
 
 #pragma mark - 通用类
@@ -87,7 +87,7 @@ static const void *kViewModelKey = &kViewModelKey;
     return frame;
 }
 
-- (void)fk_hideKeyBoard
+- (void)hideKeyBoard
 {
     // 遍历所有子视图
     [self _traverseAllSubviewsToResignFirstResponder:self.view];

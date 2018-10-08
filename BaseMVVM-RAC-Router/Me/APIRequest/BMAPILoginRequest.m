@@ -8,7 +8,7 @@
 
 #import "BMAPILoginRequest.h"
 // 登录token key
-NSString *BMLoginAccessTokenKey = @"accessToken";
+NSString *BMLoginAccessTokenKey = @"content";
 
 @implementation BMAPILoginRequest {
     NSString *_usr;
@@ -31,31 +31,26 @@ NSString *BMLoginAccessTokenKey = @"accessToken";
 - (YTKResponseSerializerType)responseSerializerType {
     return YTKResponseSerializerTypeJSON;
 }
-- (YTKRequestSerializerType)requestSerializerType {
-    return YTKRequestSerializerTypeJSON;
-}
 
-- (BOOL)statusCodeValidator {
-    return YES;
-}
 
-//// 可以在这里对response 数据进行重新格式化， 也可以使用delegate 设置 reformattor
 //- (id)reformJSONResponse:(id)jsonResponse
 //{
 //
 //}
 
 - (NSString *)requestUrl {
-    return @"http://ip.taobao.com/service/getIpInfo.php";
+    return @"/api.php";
 }
-
 
 - (id)requestArgument {
     
     return  @{
-              @"username":_usr,
-              @"password":_pwd,
-              @"ip":@"myip"
+//              @"username":_usr,
+//              @"password":_pwd,
+              
+              @"key":@"free",
+              @"appid":@"0",
+              @"msg":_usr
               };
 }
 

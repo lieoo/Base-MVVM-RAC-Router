@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  隐藏键盘
  */
-- (void)fk_hideKeyBoard;
+- (void)hideKeyBoard;
 
 @end
 

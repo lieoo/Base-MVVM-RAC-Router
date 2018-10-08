@@ -11,15 +11,16 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // 获取服务器响应状态码 key
-FOUNDATION_EXTERN NSString *const BM_BaseRequest_StatusCodeKey;
-// 服务器响应数据成功状态码 value
-FOUNDATION_EXTERN NSString *const BM_BaseRequest_DataValueKey;
-// 获取服务器响应状态信息 key
-FOUNDATION_EXTERN NSString *const BM_BaseRequest_StatusMsgKey;
-// 获取服务器响应数据 key
-FOUNDATION_EXTERN NSString *const BM_BaseRequest_DataKey;
-
+//FOUNDATION_EXTERN NSString *const BM_BaseRequest_StatusCodeKey;
+//// 服务器响应数据成功状态码 value
+//FOUNDATION_EXTERN NSString *const BM_BaseRequest_DataValueKey;
+//// 获取服务器响应状态信息 key
+//FOUNDATION_EXTERN NSString *const BM_BaseRequest_StatusMsgKey;
+//// 获取服务器响应数据 key
+//FOUNDATION_EXTERN NSString *const BM_BaseRequest_DataKey;
 @class BMAPIBaseRequest;
+
+
 @protocol BMBaseRequestFeformDelegate <NSObject>
 
 /**
@@ -33,7 +34,7 @@ FOUNDATION_EXTERN NSString *const BM_BaseRequest_DataKey;
 
 @end
 
-@interface BMAPIBaseRequest : YTKRequest
+@interface BMAPIBaseRequest : YTKRequest<YTKRequestDelegate>
 
 
 /**

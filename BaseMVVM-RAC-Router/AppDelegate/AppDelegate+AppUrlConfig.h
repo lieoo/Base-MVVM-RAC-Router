@@ -9,5 +9,5 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate (AppUrlConfig)
-- (void)configNetWrokApiEnv;
++ (void)configNetWrokApiEnv;
 @end
