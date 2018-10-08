@@ -232,11 +232,7 @@
 				B35281102167033D009CD6AC /* HotFix */,
 				B337C9272143BCFB00E854F3 /* ViewController.h */,
 				B337C9282143BCFB00E854F3 /* ViewController.m */,
-				B35A2E86215DBAB900534779 /* NSObject+NonBase.h */,
-				B35A2E87215DBAB900534779 /* NSObject+NonBase.m */,
 				B3528166216766D0009CD6AC /* Utils */,
-				B35A2E89215DBC2F00534779 /* UIViewController+NonBase.h */,
-				B35A2E8A215DBC2F00534779 /* UIViewController+NonBase.m */,
 				B337C96C2143D54C00E854F3 /* Router */,
 				B337C9652143CEE500E854F3 /* Constant */,
 				B337C92D2143BCFC00E854F3 /* Assets.xcassets */,
@@ -488,10 +484,14 @@
 		B3528166216766D0009CD6AC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B35A2E86215DBAB900534779 /* NSObject+NonBase.h */,
+				B35A2E87215DBAB900534779 /* NSObject+NonBase.m */,
 				B3528167216766E4009CD6AC /* UIColor+Tools.h */,
 				B3528168216766E4009CD6AC /* UIColor+Tools.m */,
 				B352816A216767E0009CD6AC /* UIImage+Tools.h */,
 				B352816B216767E0009CD6AC /* UIImage+Tools.m */,
+				B35A2E89215DBC2F00534779 /* UIViewController+NonBase.h */,
+				B35A2E8A215DBC2F00534779 /* UIViewController+NonBase.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";

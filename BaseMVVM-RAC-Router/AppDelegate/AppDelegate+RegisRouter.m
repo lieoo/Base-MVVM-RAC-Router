@@ -89,8 +89,7 @@
 }
 
 
-+ (void)registerSchemaRouter
-{
++ (void)registerSchemaRouter {
     // HTTP注册
     [[JLRoutes routesForScheme:BMHTTPRouteSchema] addRoute:@"/somethingHTTP" handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
         

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BMDiscoverViewController : UIViewController
+@interface BMDiscoverViewController : UIViewController 
 
 @end
 

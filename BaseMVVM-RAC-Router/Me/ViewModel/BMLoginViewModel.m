@@ -50,7 +50,7 @@
             
             return [[[loginRequest.rac_requestSignal doNext:^(id  _Nullable x) {
                 // 解析数据
-                NSLog(@"%@",x);
+//                NSLog(@"%@",x);
                 
                 [[NSUserDefaults standardUserDefaults] setObject:@(YES) forKey:@"isLogin"];
                 

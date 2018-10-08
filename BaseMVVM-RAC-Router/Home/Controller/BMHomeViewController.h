@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "BMBaseViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BMHomeViewController : UIViewController 
+@interface BMHomeViewController : BMBaseViewController
 
 @end
 

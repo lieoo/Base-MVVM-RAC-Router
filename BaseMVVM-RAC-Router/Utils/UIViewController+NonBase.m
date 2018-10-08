@@ -43,7 +43,7 @@ static const void *kViewModelKey = &kViewModelKey;
 
 #pragma mark - 通用类
 
-- (CGRect)fk_visibleBoundsShowNav:(BOOL)hasNav showTabBar:(BOOL)hasTabBar
+- (CGRect)bm_visibleBoundsShowNav:(BOOL)hasNav showTabBar:(BOOL)hasTabBar
 {
     CGRect frame = [[UIScreen mainScreen] bounds];
     

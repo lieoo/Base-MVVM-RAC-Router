@@ -41,6 +41,9 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
     [self configNavigationForController];
     
     [self bindViewModelForController];
+    
+    NSLog(@"%@",self.params);
+    
 }
 
 - (void)initialDefaultsForController {
@@ -116,7 +119,12 @@ typedef NS_ENUM(NSInteger, kLoginInputType) {
             
             BOOL isLogin = [[NSUserDefaults standardUserDefaults] objectForKey:@"isLogin"];
             if(isLogin){
+                
                 [[NSNotificationCenter defaultCenter] postNotificationName:BMLoginStateChangedNotificationKey object:nil];
+                
+                [self dismissViewControllerAnimated:YES completion:nil];
+                
+                
             }else{
                 NSLog(@"登录失败");
             }

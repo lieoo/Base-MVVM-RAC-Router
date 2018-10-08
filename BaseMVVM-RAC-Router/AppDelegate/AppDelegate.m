@@ -58,8 +58,7 @@ NSString *const BMLoginStateChangedNotificationKey = @"LoginStateChangedNotifica
          }
          if (isLogin) {//已登录
              [self.window setRootViewController:self.tabbarController];
-         }else//未登录
-         {
+         }else {
              [self.window setRootViewController:self.loginController];
          }
      }];

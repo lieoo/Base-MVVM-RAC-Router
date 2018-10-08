@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param hasTabBar 是否有tabbar
  @return 坐标
  */
-- (CGRect)fk_visibleBoundsShowNav:(BOOL)hasNav showTabBar:(BOOL)hasTabBar;
+- (CGRect)bm_visibleBoundsShowNav:(BOOL)hasNav showTabBar:(BOOL)hasTabBar;
 
 /**
  隐藏键盘
